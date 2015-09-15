@@ -19,9 +19,9 @@ Resources
 ## Contact the lecturer
 Email: bryan.duggan@dit.ie
 
-Twitter: @skooter500
+Twitter: [@skooter500](http://twitter.com/skooter500)
 
-Slack: 
+Slack: https://dt228-oop-2015.slack.com
 
 # Semester 1
 ## Lecture 1
@@ -35,7 +35,7 @@ Procedurally generated minnowforms video:
 
 NILL - One of my game jam games. It uses lots of nice come sci stuff like Perlin noise, procedural generation and binary search
 
-[![YouTube](http://img.youtube.com/vi/5G-PKD5GnlE/0.jpg)](https://www.youtube.com/watch?v=5G-PKD5GnlE)
+[![YouTube](http://img.youtube.com/vi/RkReFavQbQo/0.jpg)](https://www.youtube.com/watch?v=RkReFavQbQo)
 
 [NILL Sourcecode](http://github.com/skooter500/NILL)
 
@@ -48,11 +48,14 @@ Some Processing assignments from previous years:
 ## Lab 1
 
 ### Learning Outcomes
+- Sign up for the class Skack
 - Become familiar with the syntax of Processing
 - Become familiar with writing and running sketches in Processing
 - Practice using variables
 - Practice using loops
 - Practice using nested loops and the if statement
+
+Firstly, go to https://dt228-oop-2015.slack.com and sign up for the slack with your DIT email address. When you are signed up, send a little greeting to everyone on the #general channel. 
 
 Take the time to look up the following methods in the [Processing language reference](http://processing.org/reference/ ) to make sure you are clear about the syntax and parameters:
 
