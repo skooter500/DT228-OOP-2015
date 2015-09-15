@@ -18,25 +18,26 @@ Resources
 
 ## Contact the lecturer
 Email: bryan.duggan@dit.ie
+
 Twitter: @skooter500
+
 Slack: 
 
 # Semester 1
-## Week 1
+## Lecture 1
 * [Introduction slides](https://onedrive.live.com/redir?resid=AB603D769EDBF24E!78307&authkey=!AAILJL-DwExqnac&ithint=file%2cpptx)
 * [The program we wrote in class](processing/intro/intro.pde)
-* Procedurally generated minnowforms video
-  [![YouTube](http://img.youtube.com/vi/KOuete3f21c/0.jpg)](http://www.youtube.com/watch?v=KOuete3f21c)
-* Some Processing assignments from previous years: 
-  [![YouTube](http://img.youtube.com/vi/S575a92AsuQ/0.jpg)](https://www.youtube.com/watch?v=S575a92AsuQ)
-  
-  [![YouTube](http://img.youtube.com/vi/wAEABphUJB8/0.jpg)](https://www.youtube.com/watch?v=wAEABphUJB8)
-
 * [The contract for this course](http://1drv.ms/1DbmnG9)
 
-### Lab 1
+Procedurally generated minnowforms video
+[![YouTube](http://img.youtube.com/vi/KOuete3f21c/0.jpg)](http://www.youtube.com/watch?v=KOuete3f21c)
+Some Processing assignments from previous years: 
+[![YouTube](http://img.youtube.com/vi/S575a92AsuQ/0.jpg)](https://www.youtube.com/watch?v=S575a92AsuQ)
+[![YouTube](http://img.youtube.com/vi/wAEABphUJB8/0.jpg)](https://www.youtube.com/watch?v=wAEABphUJB8)
 
-#### Learning Outcomes
+## Lab 1
+
+### Learning Outcomes
 - Become familiar with the syntax of Processing
 - Become familiar with writing and running sketches in Processing
 - Practice using variables
