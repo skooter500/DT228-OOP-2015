@@ -24,31 +24,11 @@ Twitter: [@skooter500](http://twitter.com/skooter500)
 Slack: https://dt228-oop-2015.slack.com
 
 # Semester 1
-## Lecture 1
-* [Introduction slides](https://onedrive.live.com/redir?resid=AB603D769EDBF24E!78307&authkey=!AAILJL-DwExqnac&ithint=file%2cpptx)
-* [The program we wrote in class](processing/intro/intro.pde)
-* [The contract for this course](http://1drv.ms/1DbmnG9)
-
-Procedurally generated minnowforms video:
-
-[![YouTube](http://img.youtube.com/vi/5G-PKD5GnlE/0.jpg)](https://www.youtube.com/watch?v=5G-PKD5GnlE)
-
-NILL - One of my game jam games. It uses lots of nice come sci stuff like Perlin noise, procedural generation and binary search
-
-[![YouTube](http://img.youtube.com/vi/RkReFavQbQo/0.jpg)](https://www.youtube.com/watch?v=RkReFavQbQo)
-
-[NILL Sourcecode](http://github.com/skooter500/NILL)
-
-Some Processing assignments from previous years: 
-
-[![YouTube](http://img.youtube.com/vi/S575a92AsuQ/0.jpg)](https://www.youtube.com/watch?v=S575a92AsuQ)
-
-[![YouTube](http://img.youtube.com/vi/wAEABphUJB8/0.jpg)](https://www.youtube.com/watch?v=wAEABphUJB8)
 
 ## Lab 1
 
 ### Learning Outcomes
-- Sign up for the class Skack
+- Sign up for the class Slack
 - Become familiar with the syntax of Processing
 - Become familiar with writing and running sketches in Processing
 - Practice using variables
@@ -73,7 +53,7 @@ Here are two shapes you can draw:
 
 Try experimenting with colours!
 
-Now try and figure out how to these patterns:
+Now try and figure out how to draw these patterns:
 
 ![Sketch](images/p2.png)
 
@@ -90,3 +70,26 @@ Finally try this one:
 Notice the mouths
 
 Feel free to experiment with colour!  
+
+When you are finished with thes exercises, [log onto webcourses](http://dit.ie/webcourses) and complete the MCQ for this week
+
+## Lecture 1
+* [Introduction slides](https://onedrive.live.com/redir?resid=AB603D769EDBF24E!78307&authkey=!AAILJL-DwExqnac&ithint=file%2cpptx)
+* [The program we wrote in class](processing/intro/intro.pde)
+* [The contract for this course](http://1drv.ms/1DbmnG9)
+
+Procedurally generated minnowforms video:
+
+[![YouTube](http://img.youtube.com/vi/5G-PKD5GnlE/0.jpg)](https://www.youtube.com/watch?v=5G-PKD5GnlE)
+
+NILL - One of my game jam games. It uses lots of nice come sci stuff like Perlin noise, procedural generation and binary search
+
+[![YouTube](http://img.youtube.com/vi/RkReFavQbQo/0.jpg)](https://www.youtube.com/watch?v=RkReFavQbQo)
+
+[NILL Sourcecode](http://github.com/skooter500/NILL)
+
+Some Processing assignments from previous years: 
+
+[![YouTube](http://img.youtube.com/vi/S575a92AsuQ/0.jpg)](https://www.youtube.com/watch?v=S575a92AsuQ)
+
+[![YouTube](http://img.youtube.com/vi/wAEABphUJB8/0.jpg)](https://www.youtube.com/watch?v=wAEABphUJB8)
