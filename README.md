@@ -29,10 +29,14 @@ Slack:
 * [The program we wrote in class](processing/intro/intro.pde)
 * [The contract for this course](http://1drv.ms/1DbmnG9)
 
-Procedurally generated minnowforms video
+Procedurally generated minnowforms video:
+
 [![YouTube](http://img.youtube.com/vi/KOuete3f21c/0.jpg)](http://www.youtube.com/watch?v=KOuete3f21c)
+
 Some Processing assignments from previous years: 
+
 [![YouTube](http://img.youtube.com/vi/S575a92AsuQ/0.jpg)](https://www.youtube.com/watch?v=S575a92AsuQ)
+
 [![YouTube](http://img.youtube.com/vi/wAEABphUJB8/0.jpg)](https://www.youtube.com/watch?v=wAEABphUJB8)
 
 ## Lab 1
