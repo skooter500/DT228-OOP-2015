@@ -23,6 +23,9 @@ Resources
 
 # Semester 1
 
+# Week 1
+* [The Dublin Flag sketch](processing/dublinflag)
+
 ## Lab 1
 
 * [Solution](processing/smileyface/smileyface.pde)
@@ -35,8 +38,6 @@ Resources
 - Practice using loops
 - Practice using nested loops and the if statement
 - Practice writing code to generate sequences of numbers
-
-
 
 Firstly, go to https://dt228-oop-2015.slack.com and sign up for the slack with your DIT email address. When you are signed up, send a little greeting to everyone on the #general channel. If you have a smartphone, you might want to install the Slack app. It's free. Also if you install the app, you will probably want to disable certain notifications, otherwise your phone will be buzzing every time someone posts anything. [Here is an article that explains how to do this](https://slack.zendesk.com/hc/en-us/articles/201649323-Channel-and-group-notification-preferences).
 
