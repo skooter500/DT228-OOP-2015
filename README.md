@@ -23,7 +23,31 @@ Resources
 
 # Semester 1
 
+# Week 2
+
+## Lab 2
+
+### Part 1
+
+Make a rollover button in Processing. The button should be centred on the window and take up 30% of the width and height of the window. When you roll the mouse over the button, it should change colour from grey to blue:
+Advanced! Make the button into a toggle (click on/click off) button. The button should go red when it is toggled on. In order to do this, you need to make use of the following method in your sketch:
+
+~~~Java
+void mousePressed()
+~~~
+
+This method will get called by the Processing framework whenever the mouse in pressed in the window where your sketch is running. Here is a youtube video with the completed sketch:
+
+[![YouTube](http://img.youtube.com/vi/YGlGRnQoDFY/0.jpg)](https://www.youtube.com/watch?v=YGlGRnQoDFY)
+
+### Part 2
+Implement a bouncing ball. It should move diagonally in your sketch and "bounce" off the walls.
+
+## Lecture 2
+* [The face moving in 4 directions sketch](processing/facearoundthewall)
+
 # Week 1
+## Tutorial 1
 * [The Dublin Flag sketch](processing/dublinflag)
 
 ## Lab 1
