@@ -27,7 +27,13 @@ Resources
 
 ## Lab 2
 
+### Learning Outcomes
+- Practice solving problems using the if statement
+- Practice using AND with an if statement
+
 ### Part 1
+
+You can get the position where the mouse is located in Processing using the built in variables mouseX and mouseY. Try printing these to the console in the draw() methdod to see how these values change as you move your mouse over the Processing window.
 
 Make a rollover button in Processing. The button should be centred on the window and take up 30% of the width and height of the window. When you roll the mouse over the button, it should change colour from grey to blue:
 Advanced! Make the button into a toggle (click on/click off) button. The button should go red when it is toggled on. In order to do this, you need to make use of the following method in your sketch:
@@ -43,8 +49,18 @@ This method will get called by the Processing framework whenever the mouse in pr
 ### Part 2
 Implement a bouncing ball. It should move diagonally in your sketch and "bounce" off the walls.
 
+Login to Webcourses and do the MCQ for today
+
 ## Lecture 2
 * [The face moving in 4 directions sketch](processing/facearoundthewall)
+* Data types, the if statement and dynamic sketches in Processing video (from last year)
+  
+  [![YouTube](http://img.youtube.com/vi/Y0b9W3UJ2BU/0.jpg)](https://www.youtube.com/watch?v=Y0b9W3UJ2BU)
+
+ * The best of this weeks videos (incomplete making the moving smiley face video)
+
+   [![YouTube](http://img.youtube.com/vi/Wr_Ev0Xqh_U/0.jpg)](https://www.youtube.com/watch?v=Wr_Ev0Xqh_U)
+ 
 
 # Week 1
 ## Tutorial 1
