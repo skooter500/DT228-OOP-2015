@@ -1,5 +1,5 @@
-DT228-OOP
-=========
+# DT228 Object Oriented Programming
+
 
 Resources
 ---------
@@ -23,8 +23,8 @@ Resources
 
 # Semester 1
 
-# Week 2
-
+## Week 2
+   
 ## Lab 2
 
 ### Learning Outcomes
