@@ -21,53 +21,29 @@ Resources
 * Twitter: [@skooter500](http://twitter.com/skooter500)
 * Slack: https://dt228-oop-2015.slack.com
 
-# Semester 1
-
-## Week 2
-   
-## Lab 2
-
-### Learning Outcomes
-- Practice solving problems using the if statement
-- Practice using AND with an if statement
-
-### Part 1
-
-You can get the position where the mouse is located in Processing using the built in variables ```mouseX``` and ```mouseY```. Try printing these to the console in the ```draw()``` methdod to see how these values change as you move your mouse over the Processing window.
-
-Make a rollover button in Processing. The button should be centred on the window and take up 30% of the width and height of the window. When you roll the mouse over the button, it should change colour from grey to blue:
-Advanced! Make the button into a toggle (click on/click off) button. The button should go red when it is toggled on. In order to do this, you need to make use of the following method in your sketch:
-
-~~~Java
-void mousePressed()
-~~~
-
-This method will get called by the Processing framework whenever the mouse in pressed in the window where your sketch is running. Here is a youtube video with the completed sketch:
-
-[![YouTube](http://img.youtube.com/vi/YGlGRnQoDFY/0.jpg)](https://www.youtube.com/watch?v=YGlGRnQoDFY)
-
-### Part 2
-Implement a bouncing ball. It should move diagonally in your sketch and "bounce" off the walls.
-
-Login to Webcourses and do the MCQ for today
-
-## Lecture 2
-* [The face moving in 4 directions sketch](processing/facearoundthewall)
-* Data types, the if statement and dynamic sketches in Processing video (from last year)
-  
-  [![YouTube](http://img.youtube.com/vi/Y0b9W3UJ2BU/0.jpg)](https://www.youtube.com/watch?v=Y0b9W3UJ2BU)
-
- * The best of this weeks videos (incomplete making the moving smiley face video)
-
-   [![YouTube](http://img.youtube.com/vi/Wr_Ev0Xqh_U/0.jpg)](https://www.youtube.com/watch?v=Wr_Ev0Xqh_U)
- 
-
 # Week 1
-## Tutorial 1
-* [The Dublin Flag sketch](processing/dublinflag)
+## Lecture
+* [Introduction slides](https://onedrive.live.com/redir?resid=AB603D769EDBF24E!78307&authkey=!AAILJL-DwExqnac&ithint=file%2cpptx)
+* [The program we wrote in class](processing/intro/intro.pde)
+* [The contract for this course](http://1drv.ms/1DbmnG9)
 
-## Lab 1
+Procedurally generated minnowforms video:
 
+[![YouTube](http://img.youtube.com/vi/5G-PKD5GnlE/0.jpg)](https://www.youtube.com/watch?v=5G-PKD5GnlE)
+
+NILL - One of my game jam games. It uses lots of nice come sci stuff like Perlin noise, procedural generation and binary search
+
+[![YouTube](http://img.youtube.com/vi/RkReFavQbQo/0.jpg)](https://www.youtube.com/watch?v=RkReFavQbQo)
+
+[NILL Sourcecode](http://github.com/skooter500/NILL)
+
+Some Processing assignments from previous years: 
+
+[![YouTube](http://img.youtube.com/vi/S575a92AsuQ/0.jpg)](https://www.youtube.com/watch?v=S575a92AsuQ)
+
+[![YouTube](http://img.youtube.com/vi/wAEABphUJB8/0.jpg)](https://www.youtube.com/watch?v=wAEABphUJB8)
+
+## Lab
 * [Solution](processing/smileyface/smileyface.pde)
 
 ### Learning Outcomes
@@ -117,23 +93,47 @@ Feel free to experiment with colour!
 
 When you are finished with thes exercises, [log onto webcourses](http://dit.ie/webcourses) and complete the MCQ for this week
 
-## Lecture 1
-* [Introduction slides](https://onedrive.live.com/redir?resid=AB603D769EDBF24E!78307&authkey=!AAILJL-DwExqnac&ithint=file%2cpptx)
-* [The program we wrote in class](processing/intro/intro.pde)
-* [The contract for this course](http://1drv.ms/1DbmnG9)
+## Tutorial
+* [The Dublin Flag sketch](processing/dublinflag)
 
-Procedurally generated minnowforms video:
+# Week 2
 
-[![YouTube](http://img.youtube.com/vi/5G-PKD5GnlE/0.jpg)](https://www.youtube.com/watch?v=5G-PKD5GnlE)
+## Lecture
+* [The face moving in 4 directions sketch](processing/facearoundthewall)
+* Data types, the if statement and dynamic sketches in Processing video (from last year)
+  
+  [![YouTube](http://img.youtube.com/vi/Y0b9W3UJ2BU/0.jpg)](https://www.youtube.com/watch?v=Y0b9W3UJ2BU)
 
-NILL - One of my game jam games. It uses lots of nice come sci stuff like Perlin noise, procedural generation and binary search
+ * The best of this weeks videos (incomplete making the moving smiley face video)
 
-[![YouTube](http://img.youtube.com/vi/RkReFavQbQo/0.jpg)](https://www.youtube.com/watch?v=RkReFavQbQo)
+   [![YouTube](http://img.youtube.com/vi/Wr_Ev0Xqh_U/0.jpg)](https://www.youtube.com/watch?v=Wr_Ev0Xqh_U)
+   
+## Lab
 
-[NILL Sourcecode](http://github.com/skooter500/NILL)
+### Learning Outcomes
+- Practice solving problems using the if statement
+- Practice using AND with an if statement
 
-Some Processing assignments from previous years: 
+### Part 1
 
-[![YouTube](http://img.youtube.com/vi/S575a92AsuQ/0.jpg)](https://www.youtube.com/watch?v=S575a92AsuQ)
+You can get the position where the mouse is located in Processing using the built in variables ```mouseX``` and ```mouseY```. Try printing these to the console in the ```draw()``` methdod to see how these values change as you move your mouse over the Processing window.
 
-[![YouTube](http://img.youtube.com/vi/wAEABphUJB8/0.jpg)](https://www.youtube.com/watch?v=wAEABphUJB8)
+Make a rollover button in Processing. The button should be centred on the window and take up 30% of the width and height of the window. When you roll the mouse over the button, it should change colour from grey to blue:
+Advanced! Make the button into a toggle (click on/click off) button. The button should go red when it is toggled on. In order to do this, you need to make use of the following method in your sketch:
+
+~~~Java
+void mousePressed()
+~~~
+
+This method will get called by the Processing framework whenever the mouse in pressed in the window where your sketch is running. Here is a youtube video with the completed sketch:
+
+[![YouTube](http://img.youtube.com/vi/YGlGRnQoDFY/0.jpg)](https://www.youtube.com/watch?v=YGlGRnQoDFY)
+
+### Part 2
+Implement a bouncing ball. It should move diagonally in your sketch and "bounce" off the walls.
+
+Login to Webcourses and do the MCQ for today
+
+ 
+
+
