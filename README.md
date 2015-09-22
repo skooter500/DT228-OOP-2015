@@ -33,7 +33,7 @@ Resources
 
 ### Part 1
 
-You can get the position where the mouse is located in Processing using the built in variables mouseX and mouseY. Try printing these to the console in the draw() methdod to see how these values change as you move your mouse over the Processing window.
+You can get the position where the mouse is located in Processing using the built in variables ```mouseX``` and ```mouseY```. Try printing these to the console in the ```draw()``` methdod to see how these values change as you move your mouse over the Processing window.
 
 Make a rollover button in Processing. The button should be centred on the window and take up 30% of the width and height of the window. When you roll the mouse over the button, it should change colour from grey to blue:
 Advanced! Make the button into a toggle (click on/click off) button. The button should go red when it is toggled on. In order to do this, you need to make use of the following method in your sketch:
