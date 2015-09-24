@@ -19,7 +19,7 @@ float radius = 25;
 
 void draw()
 { 
-  //background(0);
+  background(0);
   
   ellipse(x, y, radius * 2, radius * 2);
   ellipse(x - 10, y - 10, 5, 5);

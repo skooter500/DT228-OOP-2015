@@ -104,9 +104,9 @@ When you are finished with thes exercises, [log onto webcourses](http://dit.ie/w
   
   [![YouTube](http://img.youtube.com/vi/Y0b9W3UJ2BU/0.jpg)](https://www.youtube.com/watch?v=Y0b9W3UJ2BU)
 
- * The best of this weeks videos (incomplete making the moving smiley face video)
+* The best of this weeks videos (incomplete making the moving smiley face video)
 
-   [![YouTube](http://img.youtube.com/vi/Wr_Ev0Xqh_U/0.jpg)](https://www.youtube.com/watch?v=Wr_Ev0Xqh_U)
+  [![YouTube](http://img.youtube.com/vi/Wr_Ev0Xqh_U/0.jpg)](https://www.youtube.com/watch?v=Wr_Ev0Xqh_U)
    
 ## Lab
 
@@ -133,6 +133,8 @@ This method will get called by the Processing framework whenever the mouse in pr
 Implement a bouncing ball. It should move diagonally in your sketch and "bounce" off the walls.
 
 Login to Webcourses and do the MCQ for today
+
+[Lab 2 Solution](processing/rolloverandbounce)
 
  
 
