@@ -136,6 +136,12 @@ Login to Webcourses and do the MCQ for today
 
 [Lab 2 Solution](processing/rolloverandbounce)
 
+## Tutorial
+
+- [The trigonometry program we wrote in the tutorial](processing/persononbuilding)
+- [This guy teaches trigonometry better than me](https://www.khanacademy.org/math/trigonometry)
+
+
  
 
 
