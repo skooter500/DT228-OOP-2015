@@ -141,7 +141,38 @@ Login to Webcourses and do the MCQ for today
 - [The trigonometry program we wrote in the tutorial](processing/persononbuilding)
 - [This guy teaches trigonometry better than me](https://www.khanacademy.org/math/trigonometry)
 
+# Week 3
+## Lecture
+- Trippy spirals Processing sketch
 
- 
+## Lab
+### Learning outcomes
+- Use variables
+- Use for loops
+- Use methods
+- Construct an algorithm to solve a problem using sin, cos and the unit circle
+- Use drawing and colours in a Processing sketch
+- Use random numbers
+
+In the lecture we learned how to make spiral shapes using a for loop with sin and cos. In the lab today you will make a sketch that draws star shapes with random numbers of points and random colours. Here is what the finished sketch could look like:
+
+![Sketch](images/p5.png)
+
+Here are some things you might need to read up on first:
+
+- [random function in Processing](https://processing.org/reference/random_.html)
+- [Using the modulus operator](http://www.cafeaulait.org/course/week2/15.html)
+
+You can put all your code into the setup method as this sketch doesnt use any animation (unles you want to attempt the advanced part)
+
+This is how I suggest you think about the problem.
+
+- You will need a for loop that goes from 0 - TWO_PI. There will be twice as many steps as there are points on the star. 
+- You can use % (modulus) to decide whether the x and y values you calculate should be the tip of a point or base of the point (the pointy bit or the trough).
+- Use line in your solution
+- I strongly suggest you start the lab by just drawing a single star and then maybe move on to drawing multiple stars using a for loop.
+- You could write a methdod to draw a single star with parameters
+
+When you are done, upload an image to the slack and do this weeks MCQ. 
 
 
