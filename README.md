@@ -173,6 +173,10 @@ This is how I suggest you think about the problem.
 - I strongly suggest you start the lab by just drawing a single star and then maybe move on to drawing multiple stars using a for loop.
 - You could write a methdod to draw a single star with parameters
 
+### Advanced
+- Make the starts move!
+- Make the stars rotate!
+- Add colours!
+- Go mad!
+
 When you are done, upload an image to the slack and do this weeks MCQ. 
-
-
