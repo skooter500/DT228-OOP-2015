@@ -181,7 +181,7 @@ This is how I suggest you think about the problem.
 
 When you are done, upload an image to the slack and do this weeks MCQ. 
 
-- [Solution to the lab](processing/stars)
+- [Solution to the lab](processing/star)
 
 ## Tutorial
 - [Try solving some of these trigonometry problems on pen and paper](http://www.tippcityschools.com/cms/lib6/OH01000855/Centricity/Domain/111/Acc%20Geom%20eDay%201.pdf)
