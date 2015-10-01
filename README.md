@@ -180,3 +180,11 @@ This is how I suggest you think about the problem.
 - Go mad!
 
 When you are done, upload an image to the slack and do this weeks MCQ. 
+
+- [Solution to the lab](processing/stars)
+
+## Tutorial
+- [Try solving some of these trigonometry problems on pen and paper](http://www.tippcityschools.com/cms/lib6/OH01000855/Centricity/Domain/111/Acc%20Geom%20eDay%201.pdf)
+- Try and draw the following in Processing:
+
+  ![Sketch](images/p6.png)
