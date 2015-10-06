@@ -195,7 +195,8 @@ When you are done, upload an image to the slack and do this weeks MCQ.
 - [Loops in Processing](processing/loops
 - Compiling and running your first Java program:
 
-  https://www.youtube.com/watch?v=WXftKFCtPrQ
+  [![YouTube](http://img.youtube.com/vi/WXftKFCtPrQ/0.jpg)](https://www.youtube.com/watch?v=WXftKFCtPrQ)
+
 
 ## Lab
 Lab 4
@@ -203,7 +204,7 @@ Lab 4
 
 READ ALL THE INSTRUCTIONS FOR THIS LAB BEFORE STARTING!
 
-For this lab you will be making a sketch that allows the user to convert between binary and decimal using a graphical tool that looks like this:
+For this lab you will be making a sketch that allows the user to convert between binary and decimal using a graphical tool that looks like this video (click to image to watch the video):
 
 [![YouTube](http://img.youtube.com/vi/GCziyTb0LF8/0.jpg)](https://www.youtube.com/watch?v=GCziyTb0LF8)
 
@@ -226,11 +227,7 @@ void setup()
   centX = width / 2;
   centY = height / 2;  
   
-<<<<<<< HEAD
   // And set their values here
-=======
-  // And set their valuse here
->>>>>>> binaryNums
 }
 
 
@@ -248,12 +245,8 @@ void draw()
 int binaryToDecimal(boolean[] bytes)
 {
   int ret = 0;
-  
-<<<<<<< HEAD
+
   // Implement this method
-=======
-  // Implement this function
->>>>>>> binaryNums
   
   return ret;
 }
