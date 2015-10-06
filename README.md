@@ -188,3 +188,89 @@ When you are done, upload an image to the slack and do this weeks MCQ.
 - Try and draw the following in Processing:
 
   ![Sketch](images/p6.png)
+  
+# Week 3
+
+## Lecture
+- [Loops in Processing](processing/loops)
+
+## Lab
+Lab 4
+-----
+
+READ ALL THE INSTRUCTIONS FOR THIS LAB BEFORE STARTING!
+
+For this lab you will be making a sketch that allows the user to convert between binary and decimal using a graphical tool that looks like this:
+
+[![YouTube](http://img.youtube.com/vi/GCziyTb0LF8/0.jpg)](https://www.youtube.com/watch?v=GCziyTb0LF8)
+
+The user should be able to click any one of the squares to "toggle" a bit on or off. The number in decimal should automatically change. For example, in the screenshot above, bits 0, 2 and 4 are turned on so the number is 1 + 4 + 16 = 21. 
+
+To complete the sketch you can use a boolean array. Remember arrays from first year? Arrays are a  collection of data all of the same type. Read  [this article that explians how arrays work in Processing](http://www.processing.org/reference/Array.html). A boolean array is just an array where every element is either true or false.
+
+Here is a skeleton sketch to get you started if you need it, but *feel free to ignore this and just come up with your own solution*:
+
+~~~Java
+boolean[] bytes = new boolean[16];
+int centX, centY;
+
+// Probably need to declare some more variables here
+
+
+void setup()
+{
+  size(500, 500);
+  centX = width / 2;
+  centY = height / 2;  
+  
+<<<<<<< HEAD
+  // And set their values here
+=======
+  // And set their valuse here
+>>>>>>> binaryNums
+}
+
+
+void draw()
+{
+  background(127);
+  // Do some stuff here
+  
+  int number = binaryToDecimal(bytes);
+  // This is how you print text in Processing
+  fill(255);
+  text(number, centX, 100);
+}
+
+int binaryToDecimal(boolean[] bytes)
+{
+  int ret = 0;
+  
+<<<<<<< HEAD
+  // Implement this method
+=======
+  // Implement this function
+>>>>>>> binaryNums
+  
+  return ret;
+}
+
+void mousePressed()
+{
+  // Put some code here too
+  // To toggle the bit on or off based on the mouse position.
+}
+~~~
+
+What I suggest you do is:
+
+- Implement the method ```int binaryToDecimal(boolean[] bytes)```. 
+- Set some of the bits in the bits array to be true and test the method you wrote by printing out the value.
+- Write code in the ```draw()``` method to draw boxes to represent the bits. The box should be black only if the appropriate bit is true.
+- Write code in the ```mousePressed()``` method to calculate which if any box the user has pressed the mouse onto and toggle the appropriate bit.
+
+### Bonus!
+- Write the decimalToBinary method that uses the divide by 2 technique to convert from a decimal number to a binary string 
+- Print the bit numbers over the boxes
+- Implement 2's complement.
+- Colours! Lights! Animations!
