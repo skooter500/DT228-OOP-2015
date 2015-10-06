@@ -192,7 +192,10 @@ When you are done, upload an image to the slack and do this weeks MCQ.
 # Week 3
 
 ## Lecture
-- [Loops in Processing](processing/loops)
+- [Loops in Processing](processing/loops
+- Compiling and running your first Java program:
+
+  https://www.youtube.com/watch?v=WXftKFCtPrQ
 
 ## Lab
 Lab 4
