@@ -270,3 +270,6 @@ What I suggest you do is:
 - Print the bit numbers over the boxes
 - Implement 2's complement.
 - Colours! Lights! Animations!
+
+## Tutorial 
+- [Solution to the lab](processing/binaryToDecimal)
