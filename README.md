@@ -199,9 +199,6 @@ When you are done, upload an image to the slack and do this weeks MCQ.
 
 
 ## Lab
-Lab 4
------
-
 READ ALL THE INSTRUCTIONS FOR THIS LAB BEFORE STARTING!
 
 For this lab you will be making a sketch that allows the user to convert between binary and decimal using a graphical tool that looks like this video (click to image to watch the video):
@@ -302,13 +299,13 @@ These are the steps I suggest you follow:
 
 - Figure out how to draw a trend line graph first
 - Then figure out how to scale it so that it fits the screen
-- Then figure out how to leave a border either side of the graph
+- Then figure out how to leave horizontal and vertical borders around the graph
 - Then figure out how to draw the horizontal axis. This will be a for loop obviously. You might find the following Java/Processing methods useful:
   - [textAlign](https://processing.org/reference/textAlign_.html)
   - [substring](http://www.tutorialspoint.com/java/java_string_substring.htm)
 - Finally figure out how to draw the vertical axis. Another loop! This is the trickiest part I think
 
-Try and parameterise as much of yoru sketch with variables, so that youy could reuse the code to graph other types of data. 
+Try and parameterise as much of your sketch with variables, so that you could reuse the code to graph other types of data. 
 For example, I found it useful to write a method:
 
 ```Java
@@ -324,3 +321,5 @@ Take a screenshot of your sketch and [upload it to the slack](http://dt228-oop-2
 Try and draw this pie chart:
 
 ![Sketch](images/p8.png)
+
+Upload screenshots of your sketches and log on to webcourses to do today's MCQ.
