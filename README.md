@@ -299,8 +299,8 @@ Here is what you can try and make today:
 These are the steps I suggest you follow:
 
 - Figure out how to draw a trend line graph first
-- Then figure out how to scale it so that it fits the screen
 - Then figure out how to leave horizontal and vertical borders around the graph
+- Then figure out how to scale it so that it scales the data when drawing to the range 0-150. You could make this a variable 
 - Then figure out how to draw the horizontal axis. This will be a for loop obviously. You might find the following Java/Processing methods useful:
   - [textAlign](https://processing.org/reference/textAlign_.html)
   - [substring](http://www.tutorialspoint.com/java/java_string_substring.htm)
@@ -310,7 +310,7 @@ Try and parameterise as much of your sketch with variables, so that you could re
 For example, I found it useful to write a method:
 
 ```Java
-void drawAxis(float[] data, String[] labels, int intervals, float border)
+void drawAxis(float[] data, String[] horizLabels, int verticalIntervals, int maxVertical, float border)
 ```
 
 to draw the horizontal and vertical axes. You might like to write seperate methods for the horizontal and vertical axis. 
