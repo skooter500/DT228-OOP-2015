@@ -1,10 +1,10 @@
-# DT228 Object Oriented Programming
+w# DT228 Object Oriented Programming
 
 
 Resources
 ---------
 * [Webcourses](http://dit.ie/webcourses)
-* [Slack]()
+* [Slack](http://dt228-oop-2015.slack.com)
 * [Processing](http://processing.org)
 * [The Processing language reference](http://processing.org/reference/)
 * [Learning Processing: A Beginner's Guide to Programming Images, Animation, and Interaction (Morgan Kaufmann Series in Computer Graphics)](http://http://www.learningprocessing.com/)
@@ -19,7 +19,7 @@ Resources
 ## Contact the lecturer
 * Email: bryan.duggan@dit.ie
 * Twitter: [@skooter500](http://twitter.com/skooter500)
-* Slack: https://dt228-oop-2015.slack.com
+* Slack: [dt228-oop-2015.slack.com](https://dt228-oop-2015.slack.com)
 
 # Week 1
 ## Lecture
@@ -273,3 +273,54 @@ What I suggest you do is:
 
 ## Tutorial 
 - [Solution to the lab](processing/binaryToDecimal)
+- [A slightly different solution to the lab](processing/binaryToDecimal)
+
+# Week 5
+## Lecture
+- [Rainfall data program we wrote in the class](processing/data)
+- [Arrays in Processing reference](https://processing.org/reference/Array.html)
+- A video from last year about arrays in Processing
+
+  [![YouTube](http://img.youtube.com/vi/ccnjXlSnL2Y/0.jpg)](https://www.youtube.com/watch?v=ccnjXlSnL2Y)
+
+## Lab
+
+### Learning outcomes
+- Practice iterating over arrays in Java
+- Practice in using the for loop and variables to generate sequences of numbers
+- Understand how a line graph is made
+- Practice constructing alogorithms as part of a system
+- Practice presenting data visually
+
+Use the code you wrote yesterday in the class as starter code for today's lab. If you missed the class, this is a link to my version. 
+
+Here is what you can try and make today:
+
+![Sketch](images/p7.png)
+
+These are the steps I suggest you follow:
+
+- Figure out how to draw a trend line graph first
+- Then figure out how to scale it so that it fits the screen
+- Then figure out how to leave a border either side of the graph
+- Then figure out how to draw the horizontal axis. This will be a for loop obviously. You might find the following Java/Processing methods useful:
+  - [textAlign](https://processing.org/reference/textAlign_.html)
+  - [substring](http://www.tutorialspoint.com/java/java_string_substring.htm)
+- Finally figure out how to draw the vertical axis. Another loop! This is the trickiest part I think
+
+Try and parameterise as much of yoru sketch with variables, so that youy could reuse the code to graph other types of data. 
+For example, I found it useful to write a method:
+
+```Java
+void drawAxis(float[] data, String[] labels, int intervals, float border)
+```
+
+to draw the horizontal and vertical axes. You might like to write seperate methods for the horizontal and vertical axis. 
+This took me about an hour to complete today, so it's tricky enough to get everything working, but worth it!
+Take a screenshot of your sketch and [upload it to the slack](http://dt228-oop-2015.slack.com)!
+
+### Advanced!
+
+Try and draw this pie chart:
+
+![Sketch](images/p8.png)
