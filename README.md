@@ -289,6 +289,8 @@ What I suggest you do is:
 - Practice constructing alogorithms as part of a system
 - Practice presenting data visually
 
+Log into the slack and let me know how you are getting on.
+
 Use the code you wrote yesterday in the class as starter code for today's lab. 
 If you missed the class, [this is a link to my version](processing/data). 
 
@@ -299,9 +301,10 @@ Here is what you can try and make today:
 These are the steps I suggest you follow:
 
 - Figure out how to draw a trend line graph first
-- Then figure out how to leave horizontal and vertical borders around the graph
+- Then figure out how to leave horizontal and vertical borders around the graph. I would suggest making a variable called border to control this.
 - Then figure out how to scale it so that it scales the data when drawing to the range 0-150. You could make this a variable 
 - Then figure out how to draw the horizontal axis. This will be a for loop obviously. You might find the following Java/Processing methods useful:
+  - [The Processing map method](https://processing.org/reference/map_.html)
   - [textAlign](https://processing.org/reference/textAlign_.html)
   - [substring](http://www.tutorialspoint.com/java/java_string_substring.htm)
 - Finally figure out how to draw the vertical axis. Another loop! This is the trickiest part I think
