@@ -289,7 +289,8 @@ What I suggest you do is:
 - Practice constructing alogorithms as part of a system
 - Practice presenting data visually
 
-Use the code you wrote yesterday in the class as starter code for today's lab. If you missed the class, this is a link to my version. 
+Use the code you wrote yesterday in the class as starter code for today's lab. 
+If you missed the class, [this is a link to my version](processing/data). 
 
 Here is what you can try and make today:
 
