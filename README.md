@@ -292,7 +292,7 @@ What I suggest you do is:
 Log into the slack and let me know how you are getting on.
 
 Use the code you wrote yesterday in the class as starter code for today's lab. 
-If you missed the class, [this is a link to my version](processing/data). 
+If you missed the class, [this is a link to my version](processing/datawip). 
 
 Here is what you can try and make today:
 
@@ -327,3 +327,6 @@ Try and draw this pie chart:
 ![Sketch](images/p8.png)
 
 Upload screenshots of your sketches and log on to webcourses to do today's MCQ.
+
+## Tutorial
+- [Solution to the lab](processing/data)
