@@ -340,3 +340,45 @@ Upload screenshots of your sketches and log on to webcourses to do today's MCQ.
 - [ArrayList in Processing](https://processing.org/reference/ArrayList.html)
 - [map method in Processing](https://processing.org/reference/map_.html)
 - [split a String in Java](http://www.tutorialspoint.com/java/java_string_split.htm)
+- [The program we wrote in the class](processing/files1)
+- Video of the lecture all about map, ArrayList's, splitting strings, converting String to float:
+
+[![YouTube](http://img.youtube.com/vi/jMC_y9Nhq04/0.jpg)](https://www.youtube.com/watch?v=jMC_y9Nhq04)
+
+
+## Lab
+
+Staring with [the program we wrote in the class](processing/files1) yesterday, write code to do the folowing:
+
+- Print the year with the most rainfall
+- Calculate the average rainfall
+
+Now add some code to draw a trend graph of the rainfall data from 1850 - 2010. You can use the code from last week's lab to figure out how to draw the trend line. You should adapt the code in the following ways:
+
+- Use ArrayLists instead of an arrays
+- Refactor the code to use the processing map method wherever possible
+- On the horizontal access, just show a mark every 10 years. Here is what my graph looks like:
+
+
+
+Instead of downloading the code from the website, you can clone the git repository for the course if you want to. It's not very hard. Just fire up a command prompt on your computer and type:
+
+git clone http://github.com/skooter500/DT228-OOP
+
+I strongly suggest you spend the majority of the lab figuring out how to do this and do not spend your time writing code. You actually need to write very little code.
+
+Advanced!
+
+The file Dublin Airport.csv contains the rainfall data by month from 1850 - 2010. Open the file in Notepad++ to see what format the file is in. Some stuff for you to try:
+
+- Load the data from the file into an ArrayList of ArrayLists. In other words, each entry in the first ArrayList will be an ArrayList of floats ike this:
+
+  ```Java
+  ArrayList<ArrayList<Float>> data = new ArrayList<ArrayList<Float>>();
+  ```
+  
+  Each entry in the first ArrayList will be an ArrayList containing the rainfall data by month for a year. 
+  
+  I suggest you skip over the year part when reading the file and just store the data. It will make your calculations easier. 
+  
+- Write code to figure out what *month* in the range 1850-2010 had the lowest and highest recorded rainfall
