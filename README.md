@@ -1,4 +1,4 @@
-w# DT228 Object Oriented Programming
+DT228 Object Oriented Programming
 
 
 Resources
@@ -330,3 +330,13 @@ Upload screenshots of your sketches and log on to webcourses to do today's MCQ.
 
 ## Tutorial
 - [Solution to the lab](processing/data)
+- Video of the tutorial: Making the trend line graph in Processing:
+
+    [![YouTube](http://img.youtube.com/vi/K9R5yQCPXIE/0.jpg)](https://www.youtube.com/watch?v=K9R5yQCPXIE)
+
+# Week 6
+## Lecture
+- [Weather dataset project](processing/weatherData)
+- [ArrayList in Processing](https://processing.org/reference/ArrayList.html)
+- [map method in Processing](https://processing.org/reference/map_.html)
+- [split a String in Java](http://www.tutorialspoint.com/java/java_string_split.htm)
