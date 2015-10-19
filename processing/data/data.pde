@@ -23,8 +23,6 @@ float[] rainFall = {45,37,55,27,38,50,79,48,104,31,100,58};
 String[] months = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
 color[] colors = new color[rainFall.length];
 
-
-
 float centX, centY;
 
 float sum(float[] array)
