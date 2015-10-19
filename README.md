@@ -343,7 +343,7 @@ Upload screenshots of your sketches and log on to webcourses to do today's MCQ.
 - [The program we wrote in the class](processing/files1)
 - Video of the lecture all about map, ArrayList's, splitting strings, converting String to float:
 
-[![YouTube](http://img.youtube.com/vi/jMC_y9Nhq04/0.jpg)](https://www.youtube.com/watch?v=jMC_y9Nhq04)
+  [![YouTube](http://img.youtube.com/vi/jMC_y9Nhq04/0.jpg)](https://www.youtube.com/watch?v=jMC_y9Nhq04)
 
 
 ## Lab
@@ -363,7 +363,9 @@ Now add some code to draw a trend graph of the rainfall data from 1850 - 2010. Y
 
 Instead of downloading the code from the website, you can clone the git repository for the course if you want to. It's not very hard. Just fire up a command prompt on your computer and type:
 
+```bash
 git clone http://github.com/skooter500/DT228-OOP
+```
 
 I strongly suggest you spend the majority of the lab figuring out how to do this and do not spend your time writing code. You actually need to write very little code.
 
