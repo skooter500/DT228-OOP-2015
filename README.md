@@ -343,10 +343,16 @@ Upload screenshots of your sketches and log on to webcourses to do today's MCQ.
 - [The program we wrote in the class](processing/files1)
 - Video of the lecture all about map, ArrayList's, splitting strings, converting String to float:
 
-  [![YouTube](http://img.youtube.com/vi/jMC_y9Nhq04/0.jpg)](https://www.youtube.com/watch?v=jMC_y9Nhq04)
+[![YouTube](http://img.youtube.com/vi/jMC_y9Nhq04/0.jpg)](https://www.youtube.com/watch?v=jMC_y9Nhq04)
 
 
 ## Lab
+
+### Learning outcomes
+- Learn how to replace an array with an ArrayList
+- Learn how to use the Processing map method
+- Learn how to load a dataset from a csv file
+- Learn how to constrct algorithms to iterate over a dataset
 
 Staring with [the program we wrote in the class](processing/files1) yesterday, write code to do the folowing:
 
