@@ -369,7 +369,7 @@ Now add some code to draw a trend graph of the rainfall data from 1850 - 2010. Y
 Instead of downloading the code from the website, you can clone the git repository for the course if you want to. It's not very hard. Just fire up a command prompt on your computer and type:
 
 ```bash
-git clone http://github.com/skooter500/DT228-OOP
+git clone http://github.com/skooter500/DT228-OOP-2015
 ```
 
 Spend some time figuring out the lab before you attempt to code it!
