@@ -362,10 +362,9 @@ Staring with [the program we wrote in the class](processing/files1) yesterday, w
 Now add some code to draw a trend graph of the rainfall data from 1850 - 2010. You can use the code from last week's lab to figure out how to draw the trend line. You should adapt the code in the following ways:
 
 - Use ArrayLists instead of an arrays
-- Refactor the code to use the processing map method wherever possible
-- On the horizontal access, just show a mark every 10 years. Here is what my graph looks like:
+- Refactor the code to use the processing *map* method wherever possible. SPend 20 minutes analysing the code to look for all opportunities to replace calculations and variables with the Processing map method. I found loads of places where it simplified the code.
 
-
+![Sketch](images/p9.png)
 
 Instead of downloading the code from the website, you can clone the git repository for the course if you want to. It's not very hard. Just fire up a command prompt on your computer and type:
 
@@ -373,7 +372,7 @@ Instead of downloading the code from the website, you can clone the git reposito
 git clone http://github.com/skooter500/DT228-OOP
 ```
 
-I strongly suggest you spend the majority of the lab figuring out how to do this and do not spend your time writing code. You actually need to write very little code.
+Spend some time figuring out the lab before you attempt to code it!
 
 Advanced!
 
