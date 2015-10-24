@@ -3,6 +3,7 @@ DT228 Object Oriented Programming
 
 Resources
 ---------
+* [Assignment](assignment.md)
 * [Webcourses](http://dit.ie/webcourses)
 * [Slack](http://dt228-oop-2015.slack.com)
 * [Processing](http://processing.org)
@@ -389,3 +390,5 @@ The file Dublin Airport.csv contains the rainfall data by month from 1850 - 2010
   I suggest you skip over the year part when reading the file and just store the data. It will make your calculations easier. 
   
 - Write code to figure out what *month* in the range 1850-2010 had the lowest and highest recorded rainfall
+
+- Solution to various parts (not all) of the lab

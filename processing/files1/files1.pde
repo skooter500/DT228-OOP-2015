@@ -60,6 +60,14 @@ void setup()
     }
   }
   
+  float sum = 0;
+  for (int i = 0 ; i < sumData.size() ; i ++)
+  {
+    sum += sumData.get(i);
+  }
+  float average = sum / sumData.size();
+  println("Average: " + average);
+  
   // Look! We can use the map function here:
   println("The driest year is: " + (int) map(lowestIndex, 0, sumData.size() - 1, 1850, 2010) + " with rainfall of: " + sumData.get(lowestIndex));
   
