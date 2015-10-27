@@ -72,6 +72,39 @@ void setup()
   println("The driest year is: " + (int) map(lowestIndex, 0, sumData.size() - 1, 1850, 2010) + " with rainfall of: " + sumData.get(lowestIndex));
   
 
+  // Find the year with the highest rainfall
+  float highest = sumData.get(0);
+  int highestIndex = 0;
+  for (int i = 1 ; i < sumData.size() ; i ++)
+  {
+    if (sumData.get(i) > highest)
+    {
+      highest = sumData.get(i);
+      highestIndex = i;
+    }
+  }
+
+  println("The wettest year is: " + (int) map(highestIndex, 0, sumData.size() - 1, 1850, 2010) + " with rainfall of: " + sumData.get(highestIndex));
+
+  // Find the average rainfall
+  float average = 0;
+  // no use for an 'index' variable here, and this time
+  // we need to start from the beginning, index 0!
+  for (int i = 0; i < sumData.size(); i++)
+    average += sumData.get(i); // more concise way of writing average = average + sumData.get(i);
+
+  // at this point 'average' is the sum of all the values,
+  // to get the average we need to divide by the number
+  // of values we have:
+
+  average /= sumData.size(); // same as above, means average = average / sumData.size();
+
+  // note: sumData.size() is an int, but since average is a float,
+  // the operation is guaranteed to be in floating point.
+  // This is the case as soon as one of the operands is a float.
+
+  println("The average amount of rainfall between 1850 and 2010 is " + average);
+
   /*String[] lines = loadStrings("hellofiles.txt");  
   for (String s:lines)
   {
