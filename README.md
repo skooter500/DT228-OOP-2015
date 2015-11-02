@@ -392,3 +392,13 @@ The file Dublin Airport.csv contains the rainfall data by month from 1850 - 2010
 - Write code to figure out what *month* in the range 1850-2010 had the lowest and highest recorded rainfall
 
 - [Solution to various parts (not all) of the lab](processing/weatherData1)
+
+# Week 7
+## Lecture
+- No lecture
+## Lab
+- Work on the assignment
+## Tutorial
+- [Slides from the tutorial](https://onedrive.live.com/redir?resid=AB603D769EDBF24E!264952&authkey=!ADQ7OV2Yx73_Sw8&ithint=file%2cpptx)
+- [Audio Visualiser Processing example](processing/audioVisualiser)
+- [Harmonic motion animation](processing/harmonic)
