@@ -433,7 +433,11 @@ Today lets try and do some git stuff. For a start try cloning the git repository
 
 - Now lets create a Processing sketch and commit it to github. If you dont have one already, go and [create an account on github](http://github.com). At some stage you should sign up for the [github education program](https://education.github.com/) that gives you the ability to create private repos. 
 - Now create a new Processing sketch and add some code. Save the Processing sketch and call it whatever you like. For this lab, I will assume the sketch is called spacewar. 
-- Logon to your github account and create a repo for spacewar. Don't forget to set:
+- Logon to your github account and create a repo for spacewar. 
+
+	![Image](images/p10.png)
+
+	Don't forget to set:
 	- The repository name
 	- A description for the repository
 	- Set the repository to be public
@@ -441,7 +445,7 @@ Today lets try and do some git stuff. For a start try cloning the git repository
 	- Make sure you choose Processing for the gitignore
 	- Add an MIT license
 
-![Image](images/p9.png)
+
 
 - From the bash shell, cd to the folder where you have your sketch saved and type:
 
