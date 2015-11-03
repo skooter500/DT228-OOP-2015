@@ -394,10 +394,13 @@ The file Dublin Airport.csv contains the rainfall data by month from 1850 - 2010
 - [Solution to various parts (not all) of the lab](processing/weatherData1)
 
 # Week 7
+
 ## Lecture
 - No lecture
+
 ## Lab
 - Work on the assignment
+
 ## Tutorial
 - [Slides from the tutorial](https://onedrive.live.com/redir?resid=AB603D769EDBF24E!264952&authkey=!ADQ7OV2Yx73_Sw8&ithint=file%2cpptx)
 - [Audio Visualiser Processing example](processing/audioVisualiser
@@ -525,5 +528,27 @@ Today lets try and do some git stuff. For a start try cloning the git repository
 	git log
 	```
 
-Some OO stuff to try today. You could modify the sketch we wrote in class and an additional class with a ship that moves around the outside of the screen instead of being controlled by the keyboard. Create appropriate fields, methods and a constructor for this. Push these changes to your git repository. Here is a video of what it might look like:
+Last thing! Create a git repository for you assignmenmt. Maybe try and make some classes to encapsulate rows of data from your dataset. For example, if your dataset looked like this:
 
+```
+James Bannon,FG,Longford-Westmeath,40542.72
+Sean Barrett,CC,Dun Laoghaire, 13111.75
+...
+...
+```
+
+You could create a class that loked like this:
+
+```Java
+class Expense
+{
+  String name;
+  String party;
+  String region;
+  float claimed;
+}
+```
+
+To encapsulate a row of data from the file
+
+Log onto webcourses and do the MCQ for today. I will be on the slack if you have any questions.
