@@ -402,3 +402,7 @@ The file Dublin Airport.csv contains the rainfall data by month from 1850 - 2010
 - [Slides from the tutorial](https://onedrive.live.com/redir?resid=AB603D769EDBF24E!264952&authkey=!ADQ7OV2Yx73_Sw8&ithint=file%2cpptx)
 - [Audio Visualiser Processing example](processing/audioVisualiser)
 - [Harmonic motion animation](processing/harmonic)
+
+# Week 8
+## Lecture
+- [Classes in Processing example we wrote in the class](processing/classes)
