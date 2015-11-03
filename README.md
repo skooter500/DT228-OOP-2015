@@ -406,6 +406,12 @@ The file Dublin Airport.csv contains the rainfall data by month from 1850 - 2010
 # Week 8
 ## Lecture
 - [Classes in Processing example we wrote in the class](processing/classes)
+- Video from the class:
+
+	[![YouTube](http://img.youtube.com/vi/t7kbuD-_bCE/0.jpg)](https://www.youtube.com/watch?v=t7kbuD-_bCE)
+
+- [An excellent introduction to git video made by Paul Doyle](https://media.heanet.ie/page/6fac13d8ea21e74ea406a38fdae7c193)
+
 
 ## Lab
 ### Learning Outcomes
@@ -434,6 +440,9 @@ Today lets try and do some git stuff. For a start try cloning the git repository
 	- Make sure "Initialize this repository with a README" is checked
 	- Make sure you choose Processing for the gitignore
 	- Add an MIT license
+
+![Image](images/p9.png)
+
 - From the bash shell, cd to the folder where you have your sketch saved and type:
 
 	```bash
@@ -445,7 +454,14 @@ Today lets try and do some git stuff. For a start try cloning the git repository
 	I usually copy and paste the url from the browser. Ctrl + C and Shift + Insert on Windows, Cmd + C and Cmd + V will do the same job on the Mac. Crtl + C and Crtl + V will do this on Linux
 - Navigate to the folder in Windows Explorer/Mac Finder etc and see that the files you created on github have been pulled. You should see the .gitignore and README files. Open them up in Notepad++ and take a look at the contents.
 - Edit the README file and add some additional contents. The format of this file is called markdown. Here is a [quick reference to Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Its a simple and cool file format.
-- Now lets commit our changes and push the local changes to github. AT the bash shell type:
+- If you haven't already, you need to tell git your name and email address:
+
+	```bash
+	git config --global user.name "Your name"
+	git config --global user.email "your_email@example.com"
+	```
+
+- Now lets commit our changes and push the local changes to github. At the bash shell type:
 
 	```bash
 	git add .
@@ -463,5 +479,47 @@ Today lets try and do some git stuff. For a start try cloning the git repository
 - Verify that your changes have been pushed successfully
 - Now lets make a branch. At the bash shell type:
 
+	```bash
+	git checkout -b new_branch
 	```
+
+	The -b flag means create a new branch. When you checkout a branch that means you switch to the branch and any commits you make from now will be on that branch. 
+
+- Add a comment to the Processing sketch and save it.
+- At the bash shell type:
+
+	```bash
+	git add .
+	git commit -m "On the new branch"
+	git push --set-upstream origin new_branch
 	```
+	
+	Note! The --set-upstream origin new_branch is only necessary the first time you push to a new branch. It creates the connection between the local branch and the remote branch
+
+	Go to the repo page in your browser and verify that the new branch has been created.
+
+- Now lets switch branches to the master branch. Type:
+	
+	```bash
+	git checkout master
+	```
+
+- Close Processing and then reopen the sketch. You should see the version of the file before you made the changes on the new_branch
+- Type:
+
+	```bash
+	git merge new_branch
+	```
+
+	To merge the changes from new_branch into the master branch
+
+- Commit and push your changes to the master branch (try and figure this out yourself)
+- Some other git commands you should try. Look up their meaning!
+
+	```
+	git status
+	git log
+	```
+
+Some OO stuff to try today. You could modify the sketch we wrote in class and an additional class with a ship that moves around the outside of the screen instead of being controlled by the keyboard. Create appropriate fields, methods and a constructor for this. Push these changes to your git repository. Here is a video of what it might look like:
+
