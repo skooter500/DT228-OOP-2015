@@ -400,9 +400,68 @@ The file Dublin Airport.csv contains the rainfall data by month from 1850 - 2010
 - Work on the assignment
 ## Tutorial
 - [Slides from the tutorial](https://onedrive.live.com/redir?resid=AB603D769EDBF24E!264952&authkey=!ADQ7OV2Yx73_Sw8&ithint=file%2cpptx)
-- [Audio Visualiser Processing example](processing/audioVisualiser)
+- [Audio Visualiser Processing example](processing/audioVisualiser
 - [Harmonic motion animation](processing/harmonic)
 
 # Week 8
 ## Lecture
 - [Classes in Processing example we wrote in the class](processing/classes)
+
+## Lab
+### Learning Outcomes
+- Clone a git repository
+- Set up a github account
+- Create a git repository
+- Make commits
+- Make a class in Processing
+
+Today lets try and do some git stuff. For a start try cloning the git repository for the course. 
+
+- Fire up the bash shell and cd to folder that you want to clone the repo to and type:
+
+	```bash
+	git clone https://github.com/skooter500/DT228-OOP-2015
+	```
+
+	After a few seconds you will have your own copy of the repository for the course. 
+
+- Now lets create a Processing sketch and commit it to github. If you dont have one already, go and [create an account on github](http://github.com). At some stage you should sign up for the [github education program](https://education.github.com/) that gives you the ability to create private repos. 
+- Now create a new Processing sketch and add some code. Save the Processing sketch and call it whatever you like. For this lab, I will assume the sketch is called spacewar. 
+- Logon to your github account and create a repo for spacewar. Don't forget to set:
+	- The repository name
+	- A description for the repository
+	- Set the repository to be public
+	- Make sure "Initialize this repository with a README" is checked
+	- Make sure you choose Processing for the gitignore
+	- Add an MIT license
+- From the bash shell, cd to the folder where you have your sketch saved and type:
+
+	```bash
+	git init
+	git remote add origin THE_URL_TO_THE_REPO_YOU_JUST_MAKE
+	git pull origin master
+	```
+
+	I usually copy and paste the url from the browser. Ctrl + C and Shift + Insert on Windows, Cmd + C and Cmd + V will do the same job on the Mac. Crtl + C and Crtl + V will do this on Linux
+- Navigate to the folder in Windows Explorer/Mac Finder etc and see that the files you created on github have been pulled. You should see the .gitignore and README files. Open them up in Notepad++ and take a look at the contents.
+- Edit the README file and add some additional contents. The format of this file is called markdown. Here is a [quick reference to Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Its a simple and cool file format.
+- Now lets commit our changes and push the local changes to github. AT the bash shell type:
+
+	```bash
+	git add .
+	git commit -m "Initial version"
+	git push --set-upstream origin master
+	```
+- In your web browser, go to the github repository you created and verify that your files are all commited. 
+- Now lets make a change and make another commit. Edit your processing sketch and save the changes. Then type:
+
+	```bash 
+	git add .
+	git commit -m "Changes"
+	git push
+	```
+- Verify that your changes have been pushed successfully
+- Now lets make a branch. At the bash shell type:
+
+	```
+	```
