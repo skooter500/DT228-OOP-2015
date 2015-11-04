@@ -424,7 +424,7 @@ The file Dublin Airport.csv contains the rainfall data by month from 1850 - 2010
 - Make commits
 - Make a class in Processing
 
-Today lets try and do some git stuff. For a start try cloning the git repository for the course. 
+Today let's try and do some git stuff. For a start try cloning the git repository for the course. 
 
 - Fire up the bash shell and cd to folder that you want to clone the repo to and type:
 
@@ -552,3 +552,5 @@ class Expense
 To encapsulate a row of data from the file
 
 Log onto webcourses and do the MCQ for today. I will be on the slack if you have any questions.
+
+- [Last years lab test 1 with solution](processing/ExpensesProcessing)
