@@ -61,5 +61,5 @@ In other words, if you implement the stuff above you get 50%. To get the remaini
 - Generate the data using Fractals or some other mathematical model
 
 ## Deliverables
-- Deliverable 1: Due 9 November. You should create a git repository for your assignment code and submit your git repository link through this Google Docs form. In the git repository you should have a Processing sketch that loads your data into some data structure. IN other words, you should have identified your dataset at this stage. You should include a readme.md file that describes what your project is all about and what you plan to do
+- Deliverable 1: Due 9 November. You should create a git repository for your assignment code and submit your git repository link through [this Google Docs form](https://docs.google.com/forms/d/1CJxmXCLEsPuEbwZy0PrvmQR6lQqqJUmcVw_koxBL-50/viewform). In the git repository you should have a Processing sketch that loads your data into some data structure. IN other words, you should have identified your dataset at this stage. You should include a readme.md file that describes what your project is all about and what you plan to do
 - Deliverable 2: Due 7 December. Final assignment submission. You should include some screen-shots and a writeup in your readme.md files. Assignments to be demoed. Everybody needs to demo otherwise the submission will not be considered.
