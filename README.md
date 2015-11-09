@@ -562,3 +562,7 @@ Log onto webcourses and do the MCQ for today. I will be on the slack if you have
 
 - [Code we wrote in the tutorial](processing/expensesWIP)
  
+# Week 9
+- Lecture video all about PVectors, pushMatrix, popMatrix, encapsulation, constructors, object references
+
+	[![YouTube](http://img.youtube.com/vi/XwniJyTIdec/0.jpg)](https://www.youtube.com/watch?v=XwniJyTIdec)
