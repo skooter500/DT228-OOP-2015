@@ -559,3 +559,6 @@ Log onto webcourses and do the MCQ for today. I will be on the slack if you have
 - Video of the tutorial (the first part of the lab test from last year):
 
 	[![YouTube](http://img.youtube.com/vi/v7o1CzGIJuE/0.jpg)](https://www.youtube.com/watch?v=v7o1CzGIJuE)
+
+- [Code we wrote in the tutorial](processing/expensesWIP)
+ 
