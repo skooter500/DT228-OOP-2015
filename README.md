@@ -403,7 +403,7 @@ The file Dublin Airport.csv contains the rainfall data by month from 1850 - 2010
 
 ## Tutorial
 - [Slides from the tutorial](https://onedrive.live.com/redir?resid=AB603D769EDBF24E!264952&authkey=!ADQ7OV2Yx73_Sw8&ithint=file%2cpptx)
-- [Audio Visualiser Processing example](processing/audioVisualiser
+- [Audio Visualiser Processing example](processing/audioVisualiser)
 - [Harmonic motion animation](processing/harmonic)
 
 # Week 8
@@ -563,8 +563,12 @@ Log onto webcourses and do the MCQ for today. I will be on the slack if you have
 - [Code we wrote in the tutorial](processing/expensesWIP)
  
 # Week 9
+## Lecture
 - Lecture video all about PVectors, pushMatrix, popMatrix, encapsulation, constructors, object references
 
 	[![YouTube](http://img.youtube.com/vi/XwniJyTIdec/0.jpg)](https://www.youtube.com/watch?v=XwniJyTIdec)
 
-- [Using PVectors & classes in a Processing sketch (the program we wrote in the class)](processing/classes1)  
+- [Using PVectors & classes in a Processing sketch (the program we wrote in the class)](processing/classes1)
+
+## Lab
+- [Lab Test 1](https://github.com/skooter500/irishEconomyStarterCode)
