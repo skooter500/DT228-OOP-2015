@@ -1,6 +1,6 @@
 void setup()
 {
-  size(2000, 500);  
+  size(500, 500);  
   
 }
 
@@ -45,5 +45,5 @@ void draw()
     amplitude -= 5;
   }
   offsetTheta += 0.1f;
-  xOffset +=2f;
+  //xOffset +=2f;
 }
