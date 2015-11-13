@@ -1,0 +1,183 @@
+YEAR,WEEK,Waste Type,Location,Weight (Kg)
+2010,16,Green Waste,Collins Avenue,4960
+2010,16,Green Waste,Rathmines,6030
+2010,16,Green Waste,Coolock,7550
+2010,16,Green Waste,Crumlin,8020
+2010,17,Green Waste,Rathmines,6980
+2010,17,Green Waste,Crumlin,7160
+2010,17,Green Waste,Collins Avenue,7530
+2010,17,Green Waste,Coolock,18420
+2010,18,Green Waste,Collins Avenue,9700
+2010,18,Green Waste,Coolock,10100
+2010,19,Green Waste,Collins Avenue,4880
+2010,19,Green Waste,Rathmines,9240
+2010,19,Green Waste,Coolock,9830
+2010,19,Green Waste,Crumlin,10130
+2010,20,Green Waste,Collins Avenue,4000
+2010,20,Green Waste,Crumlin,7820
+2010,20,Green Waste,Rathmines,8030
+2010,20,Green Waste,Coolock,21950
+2010,21,Green Waste,Rathmines,7540
+2010,21,Green Waste,Crumlin,10420
+2010,21,Green Waste,Collins Avenue,16460
+2010,21,Green Waste,Coolock,21360
+2010,22,Green Waste,Rathmines,4900
+2010,22,Green Waste,Collins Avenue,6660
+2010,22,Green Waste,Crumlin,7640
+2010,22,Green Waste,Coolock,11140
+2010,23,Green Waste,Collins Avenue,7400
+2010,23,Green Waste,Coolock,19640
+2010,24,Green Waste,Rathmines,13430
+2010,24,Green Waste,Collins Avenue,15100
+2010,24,Green Waste,Crumlin,15360
+2010,24,Green Waste,Coolock,24260
+2010,25,Green Waste,Rathmines,10400
+2010,25,Green Waste,Crumlin,13700
+2010,25,Green Waste,Collins Avenue,13780
+2010,25,Green Waste,Coolock,29540
+2010,26,Green Waste,Collins Avenue,5120
+2010,26,Green Waste,Rathmines,7340
+2010,26,Green Waste,Crumlin,8560
+2010,26,Green Waste,Coolock,17120
+2010,27,Green Waste,Collins Avenue,6000
+2010,27,Green Waste,Rathmines,6420
+2010,27,Green Waste,Crumlin,7420
+2010,27,Green Waste,Coolock,16910
+2010,28,Green Waste,Crumlin,5040
+2010,28,Green Waste,Collins Avenue,6120
+2010,28,Green Waste,Rathmines,6500
+2010,28,Green Waste,Coolock,9640
+2010,29,Green Waste,Collins Avenue,7740
+2010,29,Green Waste,Coolock,20240
+2010,30,Green Waste,Collins Avenue,6440
+2010,30,Green Waste,Rathmines,11730
+2010,30,Green Waste,Crumlin,14320
+2010,30,Green Waste,Coolock,28602
+2010,31,Green Waste,Rathmines,6640
+2010,31,Green Waste,Collins Avenue,7080
+2010,31,Green Waste,Crumlin,7480
+2010,32,Green Waste,Rathmines,8050
+2010,32,Green Waste,Crumlin,8200
+2010,32,Green Waste,Collins Avenue,9000
+2010,32,Green Waste,Coolock,20720
+2010,33,Green Waste,Rathmines,6340
+2010,33,Green Waste,Crumlin,6940
+2010,33,Green Waste,Collins Avenue,16040
+2010,33,Green Waste,Coolock,17460
+2010,34,Green Waste,Coolock,9100
+2010,35,Green Waste,Coolock,9500
+2010,35,Green Waste,Rathmines,10740
+2010,35,Green Waste,Crumlin,20900
+2010,35,Green Waste,Collins Avenue,26680
+2010,36,Green Waste,Coolock,8980
+2010,37,Green Waste,Crumlin,7360
+2010,37,Green Waste,Rathmines,7960
+2010,37,Green Waste,Coolock,8120
+2010,37,Green Waste,Collins Avenue,9060
+2010,38,Green Waste,Rathmines,4980
+2010,38,Green Waste,Crumlin,6520
+2010,38,Green Waste,Collins Avenue,7660
+2010,38,Green Waste,Coolock,8860
+2010,39,Green Waste,Crumlin,5160
+2010,39,Green Waste,Rathmines,5860
+2010,39,Green Waste,Collins Avenue,6920
+2010,39,Green Waste,Coolock,9720
+2010,40,Green Waste,Coolock,17100
+2010,41,Green Waste,Rathmines,8220
+2010,41,Green Waste,Crumlin,9040
+2010,41,Green Waste,Collins Avenue,10300
+2010,41,Green Waste,Coolock,15780
+2010,42,Green Waste,Coolock,9040
+2010,43,Green Waste,DCC ?,6700
+2010,43,Green Waste,Coolock,6860
+2010,43,Green Waste,Collins Avenue,7600
+2010,45,Green Waste,Crumlin,1960
+2010,45,Green Waste,Rathmines,2120
+2010,45,Green Waste,Coolock,8260
+2010,46,Green Waste,Crumlin,6700
+2010,46,Green Waste,Collins Avenue,7040
+2010,46,Green Waste,Coolock,7260
+2010,46,Green Waste,Rathmines,8240
+2010,47,Green Waste,DCC ?,6480
+2010,50,Green Waste,Crumlin,4108
+2010,50,Green Waste,Collins Avenue,5060
+2010,50,Green Waste,Coolock,6100
+2010,50,Green Waste,Rathmines,8190
+2011,1,Green Waste,Crumlin,2340
+2011,1,Green Waste,Rathmines,2360
+2011,2,Green Waste,Coolock,6780
+2011,3,Green Waste,Crumlin,1500
+2011,3,Green Waste,-,2280
+2011,4,Green Waste,Coolock,4420
+2011,8,Green Waste,Crumlin,5320
+2011,8,Green Waste,Rathmines,7320
+2011,10,Green Waste,Crumlin,5740
+2011,10,Green Waste,Coolock,6760
+2011,10,Green Waste,Rathmines,8360
+2011,11,Green Waste,Collins Avenue,5820
+2011,12,Green Waste,Rathmines,5520
+2011,12,Green Waste,Crumlin,7260
+2011,12,Green Waste,Coolock,7880
+2011,13,Green Waste,Crumlin,3960
+2011,13,Green Waste,Coolock,7040
+2011,13,Green Waste,Collins Avenue,7060
+2011,14,Green Waste,Crumlin,1520
+2011,14,Green Waste,Coolock,8400
+2011,15,Green Waste,Crumlin,8300
+2011,15,Green Waste,Coolock,9740
+2011,15,Green Waste,Collins Avenue,12480
+2011,16,Green Waste,Crumlin,6700
+2011,16,Green Waste,Rathmines,8880
+2011,16,Green Waste,Coolock,17300
+2011,17,Green Waste,Collins Avenue,5680
+2011,17,Green Waste,Crumlin,5940
+2011,17,Green Waste,Rathmines,6420
+2011,17,Green Waste,Coolock,15520
+2011,18,Green Waste,Crumlin,6200
+2011,18,Green Waste,Collins Avenue,6260
+2011,18,Green Waste,Rathmines,6540
+2011,18,Green Waste,Coolock,8560
+2011,19,Green Waste,Collins Avenue,6200
+2011,19,Green Waste,Coolock,9720
+2011,20,Green Waste,Rathmines,6020
+2011,20,Green Waste,Crumlin,8020
+2011,20,Green Waste,Coolock,9720
+2011,21,Green Waste,Collins Avenue,7880
+2011,21,Green Waste,Coolock,8480
+2011,22,Green Waste,Collins Avenue,6760
+2011,22,Green Waste,Crumlin,8400
+2011,22,Green Waste,Rathmines,8420
+2011,22,Green Waste,Coolock,15460
+2011,23,Green Waste,Coolock,8500
+2011,24,Green Waste,Coolock,8340
+2011,24,Green Waste,Crumlin,8620
+2011,24,Green Waste,Rathmines,15460
+2011,25,Green Waste,Coolock,10500
+2011,26,Green Waste,Rathmines,7040
+2011,26,Green Waste,Crumlin,8860
+2011,26,Green Waste,Coolock,9200
+2011,26,Green Waste,Collins Avenue,9380
+2011,27,Green Waste,Rathmines,5780
+2011,27,Green Waste,Collins Avenue,7040
+2011,27,Green Waste,Crumlin,8420
+2011,27,Green Waste,Coolock,14860
+2011,28,Green Waste,Rathmines,4180
+2011,28,Green Waste,Crumlin,6380
+2011,28,Green Waste,Coolock,9560
+2011,29,Green Waste,Coolock,7340
+2011,29,Green Waste,Collins Avenue,7620
+2011,30,Green Waste,Rathmines,5280
+2011,30,Green Waste,Crumlin,6760
+2011,30,Green Waste,Collins Avenue,7880
+2011,30,Green Waste,Coolock,16520
+2011,31,Green Waste,Collins Avenue,6880
+2011,31,Green Waste,Coolock,7740
+2011,32,Green Waste,Rathmines,1760
+2011,32,Green Waste,Crumlin,2400
+2011,32,Green Waste,Coolock,8800
+2011,33,Green Waste,Rathmines,5440
+2011,33,Green Waste,Collins Avenue,7860
+2011,33,Green Waste,Coolock,8840
+2011,34,Green Waste,Crumlin,5780
+2011,34,Green Waste,Collins Avenue,7160
+2011,34,Green Waste,Coolock,9120
