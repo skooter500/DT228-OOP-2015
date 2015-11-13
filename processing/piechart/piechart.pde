@@ -1,4 +1,4 @@
-float[] dataset = {1, 2, 4,8}; 
+float[] dataset = {1, 2, 4,1,2,3}; 
 color[] colors = new color[dataset.length];
 
 float radius;
@@ -38,9 +38,9 @@ void drawPie(float[] dataset)
   // See https://processing.org/reference/atan2_.html
   if (angle < 0)
   {
-    angle = PI - angle;
+    angle = map(angle, -PI, 0, PI, TWO_PI);
   }
-  
+  println(angle);
   
   // The last angle
   float last = 0;

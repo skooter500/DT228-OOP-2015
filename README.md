@@ -575,3 +575,4 @@ Log onto webcourses and do the MCQ for today. I will be on the slack if you have
 
 ## Tutorial
 - [Pie chart with atan2 example](processing/piechart)
+- [Lots of things you can do with Strings in Java](processing/strings)
