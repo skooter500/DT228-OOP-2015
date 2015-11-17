@@ -581,9 +581,44 @@ Log onto webcourses and do the MCQ for today. I will be on the slack if you have
 ## Lecture
 - Lecture all about making game objects in Processing using encapsulation and inheritance
 
-	[![YouTube](http://img.youtube.com/vi/XwniJyTIdec/0.jpg)](https://www.youtube.com/watch?v=XwniJyTIdec)
+	[![YouTube](http://img.youtube.com/vi/5jnR-C6OqUQ/0.jpg)](https://www.youtube.com/watch?v=5jnR-C6OqUQ)
 
 - [Making AIShip and Bullet classes (the program we wrote in the class](processing/classes2)
-- Solution to the lab test 
+- Solution to the lab test (coming soon!)
 
 ## Lab
+### Learning outcomes
+- Design algorithms and classes as part of a system
+- Create instances of classes, with different field values
+- Know how to manage objects in an ArrayList
+
+You might want to clone/pull the repo for the course to get the code from yesterday:
+
+```bash
+git clone https://github.com/skooter500/DT228-OOP-2015
+```
+
+The goals of today's lab:
+
+- Start with the code from yesterday
+- Add multiple ships with different keyboard controls. For example, one Ship could use WASD and another ship could use IJKL
+- Each ship should have it's own colour
+- Bullets should take the ship colour
+- The players wrap around if they go off the bounds of the screen  
+
+Advanced!
+- Bullets get removed from the scene when they go out of bounds of the scene
+- Ships can only fire 5 bullets per second
+
+I could tell you how to do all the above, but you will have much more fun if you figure all this out yourselves :-)I suggest you form teams of no more than 3 people and spend the first half of the lab studying the code from yesterday and coming up with a plan to implement each of the above goals. 
+
+Some hints:
+
+- USe OO principles as much as possible. Use methods, fields and constructors.
+- The ```draw``` method in Processing gets called 60 times per second, so you can us this to time things!
+
+Here is a video of what it could look like:
+
+[![YouTube](http://img.youtube.com/vi/LC3uRd8ESSA/0.jpg)](https://www.youtube.com/watch?v=LC3uRd8ESSA)
+
+Upload a picture of whatever you made today to [Slack](http://dt228-oop-2015.slack.com). Dont be shy!!
