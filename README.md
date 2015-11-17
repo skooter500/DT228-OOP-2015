@@ -592,11 +592,13 @@ Log onto webcourses and do the MCQ for today. I will be on the slack if you have
 - Create instances of classes, with different field values
 - Know how to manage objects in an ArrayList
 
+Logon to [Slack](http://dt228-oop-2015.slack.com) and lets chat about code.
+
 You might want to clone/pull the repo for the course to get the code from yesterday:
 
 ```bash
 git clone https://github.com/skooter500/DT228-OOP-2015
-```
+``` 
 
 The goals of today's lab:
 
