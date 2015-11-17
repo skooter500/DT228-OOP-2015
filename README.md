@@ -576,3 +576,14 @@ Log onto webcourses and do the MCQ for today. I will be on the slack if you have
 ## Tutorial
 - [Pie chart with atan2 example](processing/piechart)
 - [Lots of things you can do with Strings in Java](processing/strings)
+
+# Week 10
+## Lecture
+- Lecture all about making game objects in Processing using encapsulation and inheritance
+
+	[![YouTube](http://img.youtube.com/vi/XwniJyTIdec/0.jpg)](https://www.youtube.com/watch?v=XwniJyTIdec)
+
+- [Making AIShip and Bullet classes (the program we wrote in the class](processing/classes2)
+- Solution to the lab test 
+
+## Lab

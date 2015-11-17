@@ -14,8 +14,11 @@ class Ship
   // Name is always the same as the class
   Ship()
   {
+
     // Constructor chaining
     this(width * 0.5f, height  * 0.5f, 50);     
+    println("In Ship DEfault Constructor");
+    
   }
   
   Ship(float x, float y, float w)
@@ -25,6 +28,8 @@ class Ship
     this.w = w; // Disambiguate w by using this
     this.halfW = w * 0.5f;
     this.theta = 0.0f;
+    println("In Ship parameterised Constructor");
+
   }
   
   void update()
