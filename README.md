@@ -584,7 +584,7 @@ Log onto webcourses and do the MCQ for today. I will be on the slack if you have
 	[![YouTube](http://img.youtube.com/vi/5jnR-C6OqUQ/0.jpg)](https://www.youtube.com/watch?v=5jnR-C6OqUQ)
 
 - [Making AIShip and Bullet classes (the program we wrote in the class](processing/classes2)
-- Solution to the lab test (coming soon!)
+- [Solution to the lab test](processing/irishEconomy)
 
 ## Lab
 ### Learning outcomes
