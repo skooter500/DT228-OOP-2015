@@ -1,5 +1,4 @@
-DT228 Object Oriented Programming
-
+DT228 Object Oriented Programming 2015-2016
 
 Resources
 ---------
@@ -624,3 +623,6 @@ Here is a video of what it could look like:
 [![YouTube](http://img.youtube.com/vi/LC3uRd8ESSA/0.jpg)](https://www.youtube.com/watch?v=LC3uRd8ESSA)
 
 Upload a picture of whatever you made today to [Slack](http://dt228-oop-2015.slack.com). Dont be shy!!
+
+## Week 11
+- [Dogs Cats and Sheep](processing/DogsCats)
