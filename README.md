@@ -628,11 +628,7 @@ Upload a picture of whatever you made today to [Slack](http://dt228-oop-2015.sla
 
 # Week 11
 ## Lecture
-- [Dogs Cats and Sheep code](processing/DogsCats)
-
-	![Sketch](images/p11.png)
-
-- Polymorphism in Processing 
+- [Dogs Cats and Sheep code](processing/DogsCats) 
 - Video of the class:
 
 	[![YouTube](http://img.youtube.com/vi/nt2DzM5n8iw/0.jpg)](https://www.youtube.com/watch?v=nt2DzM5n8iw)
