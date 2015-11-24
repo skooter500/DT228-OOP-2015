@@ -648,7 +648,7 @@ Lets take the stuff we learned in the class and apply it to the SpaceWars game w
 
 This should be pretty easy to do, so as an additional challenge, you can make a Star class. It should extend GameObject and it should rotate clockwise by itself. You should make a constructor that takes the x, y, radius, color and number of points. If you can't figure out how to draw the star using trigonometry, check out [this example from earlier in the course](processing/star). Creats some instances of the star. This is what my sketch looks like with 5 random stars on the screen
 
-	![Sketch](images/p12.png)
+![Sketch](images/p12.png)
 
 Note!
 - Sometimes using polymorphism and ArrayLists can reduce code, but even so, it is sometimes necessary in a complex system to keep separate references to different types of objects. You can check out the complete [SpaceWars game in Processing on my git repository](https://github.com/skooter500/YASC).
