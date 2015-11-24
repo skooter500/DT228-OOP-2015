@@ -624,5 +624,34 @@ Here is a video of what it could look like:
 
 Upload a picture of whatever you made today to [Slack](http://dt228-oop-2015.slack.com). Dont be shy!!
 
-## Week 11
-- [Dogs Cats and Sheep](processing/DogsCats)
+- [Solution](processing/DogsCats)
+
+# Week 11
+## Lecture
+- [Dogs Cats and Sheep code](processing/DogsCats)
+
+	![Sketch](images/p11.png)
+
+- Polymorphism in Processing 
+- Video of the class:
+
+	[![YouTube](http://img.youtube.com/vi/nt2DzM5n8iw/0.jpg)](https://www.youtube.com/watch?v=nt2DzM5n8iw)
+	
+## Lab
+### Learning Outcomes
+- Refactor a program to use Polymorphism
+- Apply polymorphism to a real world problem
+- Practice creating a class with a constructor
+- Practice using Polymorphism with an ArrayList
+
+Lets take the stuff we learned in the class and apply it to the SpaceWars game we are making. Instead of keeping track of instances of Ship and Bullets seperately, keep an ArrayList of GameObject's and use Polymorphism. You can start with your own code or [use the solution to last weeks lab that I made](processing/classes3). You will need to add update and render methods to the GameObject along with some other stuff you can figure out for yourself. 
+
+This should be pretty easy to do, so as an additional challenge, you can make a Star class. It should extend GameObject and it should rotate clockwise by itself. You should make a constructor that takes the x, y, radius, color and number of points. If you can't figure out how to draw the star using trigonometry, check out [this example from earlier in the course](processing/star). Creats some instances of the star. This is what my sketch looks like with 5 random stars on the screen
+
+	![Sketch](images/p12.png)
+
+Note!
+- Sometimes using polymorphism and ArrayLists can reduce code, but even so, it is sometimes necessary in a complex system to keep separate references to different types of objects. You can check out the complete [SpaceWars game in Processing on my git repository](https://github.com/skooter500/YASC).
+
+Let me see what you are working on by uploading a picture of your sketch to the slack. 
+Log onto webcourses and do today's MCQ
