@@ -651,3 +651,5 @@ Note!
 
 Let me see what you are working on by uploading a picture of your sketch to the slack. 
 Log onto webcourses and do today's MCQ
+
+- [Solution to the lab](processing/classes4)
