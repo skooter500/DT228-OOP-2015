@@ -653,3 +653,15 @@ Let me see what you are working on by uploading a picture of your sketch to the 
 Log onto webcourses and do today's MCQ
 
 - [Solution to the lab](processing/classes4)
+
+## Tutorial
+- [The program we wrote in the tutorial. A simple example of polymorphism](processing/polymorphism)
+
+# Week 12
+- [Abstract classes in Java](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
+- [Interfaces in Java](https://docs.oracle.com/javase/tutorial/java/concepts/interface.html)
+- Abstract classes & interfaces class:
+
+	[![YouTube](http://img.youtube.com/vi/4yVTkG-a6zo/0.jpg)](https://www.youtube.com/watch?v=4yVTkG-a6zo)
+	
+- [The SpaceWar game with collisions, abstract classes & interfaces for powerups](processing/classes5) 	
