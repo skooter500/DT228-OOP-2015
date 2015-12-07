@@ -2,7 +2,7 @@ DT228 Object Oriented Programming 2015-2016
 
 Resources
 ---------
-* [Assignment](assignment.md)
+* [Assignments](assignment.md)
 * [Webcourses](http://dit.ie/webcourses)
 * [Slack](http://dt228-oop-2015.slack.com)
 * [Processing](http://processing.org)
@@ -646,7 +646,7 @@ This should be pretty easy to do, so as an additional challenge, you can make a 
 
 ![Sketch](images/p12.png)
 
-Note!
+Note! 
 - Sometimes using polymorphism and ArrayLists can reduce code, but even so, it is sometimes necessary in a complex system to keep separate references to different types of objects. You can check out the complete [SpaceWars game in Processing on my git repository](https://github.com/skooter500/YASC).
 
 Let me see what you are working on by uploading a picture of your sketch to the slack. 
@@ -665,3 +665,21 @@ Log onto webcourses and do today's MCQ
 	[![YouTube](http://img.youtube.com/vi/4yVTkG-a6zo/0.jpg)](https://www.youtube.com/watch?v=4yVTkG-a6zo)
 	
 - [The SpaceWar game with collisions, abstract classes & interfaces for powerups](processing/classes5) 	
+
+# Week 13
+- [Assignment 1 Submission](https://docs.google.com/forms/d/1hAXUczgwlgU9hrjbXBWwVPl8gcLX7h4KXFikYtNfaZk/viewform)
+- Stephen Hawkings on the Game of Life:
+
+	[![YouTube](http://img.youtube.com/vi/CgOcEZinQ2I/0.jpg)](https://www.youtube.com/watch?v=CgOcEZinQ2I)
+	
+- John Conway on the Game of Life:	
+
+	[![YouTube](http://img.youtube.com/vi/C2vgICfQawE/0.jpg)](https://www.youtube.com/watch?v=C2vgICfQawE)
+
+- Epic Conway's Game of Life:
+
+	[![YouTube](http://img.youtube.com/vi/FdMzngWchDk/0.jpg)](https://www.youtube.com/watch?v=FdMzngWchDk)
+	
+- And finally, Alan Watts
+
+	[![YouTube](http://img.youtube.com/vi/wU0PYcCsL6o/0.jpg)](https://www.youtube.com/watch?v=wU0PYcCsL6o)	
