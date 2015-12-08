@@ -26,7 +26,7 @@ You can find lots of datasets online on every topic imaginable. Datasets can be 
 Some interesting visualisations you can look at for inspiration:
 
 
-[![YouTube](http://img.youtube.com/vi/5Zg-C8AAIGg/0.jpg)](https://www.youtube.com/watch?v=5Zg-C8AAIGg
+[![YouTube](http://img.youtube.com/vi/5Zg-C8AAIGg/0.jpg)](https://www.youtube.com/watch?v=5Zg-C8AAIGg)
 
 [![YouTube](http://img.youtube.com/vi/-xS7QJhVbcM/0.jpg)](https://www.youtube.com/watch?v=-xS7QJhVbcM)
 
