@@ -21,21 +21,25 @@ Resources
 * Twitter: [@skooter500](http://twitter.com/skooter500)
 * Slack: [dt228-oop-2015.slack.com](https://dt228-oop-2015.slack.com)
 
+# Semester 2
+
+# Week 1
+- [Overview of semester 2](https://onedrive.live.com/redir?resid=AB603D769EDBF24E!266886&authkey=!AMj4BGfaVvEb3o8&ithint=file%2cpptx)
+- [Abstract classes in Java](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
+- [Interfaces in Java](https://docs.oracle.com/javase/tutorial/java/concepts/interface.html)
+- Abstract classes & interfaces class:
+
+	[![YouTube](http://img.youtube.com/vi/4yVTkG-a6zo/0.jpg)](https://www.youtube.com/watch?v=4yVTkG-a6zo)
+	
+- [The SpaceWar game with collisions, abstract classes & interfaces for powerups](processing/classes5) 	
+
+# Semester 1
+
 # Week 1
 ## Lecture
 * [Introduction slides](https://onedrive.live.com/redir?resid=AB603D769EDBF24E!78307&authkey=!AAILJL-DwExqnac&ithint=file%2cpptx)
 * [The program we wrote in class](processing/intro/intro.pde)
 * [The contract for this course](http://1drv.ms/1DbmnG9)
-
-Procedurally generated minnowforms video:
-
-[![YouTube](http://img.youtube.com/vi/5G-PKD5GnlE/0.jpg)](https://www.youtube.com/watch?v=5G-PKD5GnlE)
-
-NILL - One of my game jam games. It uses lots of nice come sci stuff like Perlin noise, procedural generation and binary search
-
-[![YouTube](http://img.youtube.com/vi/RkReFavQbQo/0.jpg)](https://www.youtube.com/watch?v=RkReFavQbQo)
-
-[NILL Sourcecode](http://github.com/skooter500/NILL)
 
 Some Processing assignments from previous years: 
 
