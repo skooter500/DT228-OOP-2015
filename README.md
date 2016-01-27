@@ -30,8 +30,8 @@ Resources
 - Abstract classes & interfaces class:
 
 	[![YouTube](http://img.youtube.com/vi/4yVTkG-a6zo/0.jpg)](https://www.youtube.com/watch?v=4yVTkG-a6zo)
-	
-- [The SpaceWar game with collisions, abstract classes & interfaces for powerups](processing/classes5) 	
+	 	
+- [The SpaceWar game with collisions, abstract classes, interfaces for powerups and bullets colliding with playeres](processing/classes6) 	
 
 # Semester 1
 
