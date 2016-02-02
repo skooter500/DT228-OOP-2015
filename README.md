@@ -22,8 +22,42 @@ Resources
 * Slack: [dt228-oop-2015.slack.com](https://dt228-oop-2015.slack.com)
 
 # Semester 2
+# Week 2
+# Lecture
+- If you missed Mondays class, check out this introduction to [Java from the Java Tutorial](http://docs.oracle.com/javase/tutorial/).
+ 
+# Tutorial
+
+Today we will make some changes to the Java code we wrote in the class on Monday. Fire up the git bash shell and clone the repo for the course using:
+
+```bash
+git clone https://github.com/skooter500/DT228-OOP-2015
+```
+Now cd into the folder java\DogsCats
+
+To compile the example type:
+
+```bash
+javac ie/dit/*.java
+```
+
+And to run the program type:
+
+```bash
+java ie.dit.Main
+```
+
+- Take some time to look over the code and make sure you know what's happening!
+- Create a new subclass or Animal called ```Cat``` with a field for ```numLives```
+- Make accessors (set and get methods) for numLives
+- Write a Constructor. Call the super class constructor and also set numLives to be 9
+- Write a method called kill. It should subtract 1 from numLives if numLives is > 0 and print a message. If numLives is 0, you should just print the message "I'm dead"
+- In the Main class, construct a Cat instance and in a loop, call kill until the Cat is dead.
 
 # Week 1
+
+## Lecture
+
 - [Overview of semester 2](https://onedrive.live.com/redir?resid=AB603D769EDBF24E!266886&authkey=!AMj4BGfaVvEb3o8&ithint=file%2cpptx)
 - [Abstract classes in Java](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
 - [Interfaces in Java](https://docs.oracle.com/javase/tutorial/java/concepts/interface.html)
@@ -32,6 +66,9 @@ Resources
 	[![YouTube](http://img.youtube.com/vi/4yVTkG-a6zo/0.jpg)](https://www.youtube.com/watch?v=4yVTkG-a6zo)
 	 	
 - [The SpaceWar game with collisions, abstract classes, interfaces for powerups and bullets colliding with playeres](processing/classes6) 	
+
+## Lab 
+- Work on your assignment
 
 # Semester 1
 
