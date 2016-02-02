@@ -27,7 +27,6 @@ Resources
 - If you missed Mondays class, check out this introduction to [Java from the Java Tutorial](http://docs.oracle.com/javase/tutorial/).
  
 # Tutorial
-
 Today we will make some changes to the Java code we wrote in the class on Monday. Fire up the git bash shell and clone the repo for the course using:
 
 ```bash
@@ -53,6 +52,8 @@ java ie.dit.Main
 - Write a Constructor. Call the super class constructor and also set numLives to be 9
 - Write a method called kill. It should subtract 1 from numLives if numLives is > 0 and print a message. If numLives is 0, you should just print the message "I'm dead"
 - In the Main class, construct a Cat instance and in a loop, call kill until the Cat is dead.
+
+- [Collision detection in processing example](processing/CollisionDetection)
 
 # Week 1
 

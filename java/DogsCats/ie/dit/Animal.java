@@ -1,6 +1,6 @@
 package ie.dit;
 
-public abstract class Animal
+public class Animal
 {
 	private String name;
 	
@@ -37,5 +37,8 @@ public abstract class Animal
 		this("", 0);
 	}
 	
-	public abstract void speak();
+	public void speak()
+	{
+		System.out.println("I can't speak!");
+	}
 }
