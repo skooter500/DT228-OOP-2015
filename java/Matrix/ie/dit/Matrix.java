@@ -54,6 +54,6 @@ public class Matrix
 			}
 			sb.append("\n");
 		}
-			
+		return sb.toString();
 	}
 }
