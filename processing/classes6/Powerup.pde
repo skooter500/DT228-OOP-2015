@@ -2,5 +2,5 @@
 // When a class implements an interface it's a way of guaranteeing that the class has certain methods 
 interface Powerup
 {
-  void applyTo(Ship ship);
+  void applyTo(Ship s);
 }

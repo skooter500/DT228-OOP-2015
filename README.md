@@ -22,9 +22,13 @@ Resources
 * Slack: [dt228-oop-2015.slack.com](https://dt228-oop-2015.slack.com)
 
 # Semester 2
-# Week 2
-# Lecture
-- If you missed Mondays class, check out this introduction to [Java from the Java Tutorial](http://docs.oracle.com/javase/tutorial/).
+## Week 3
+## [The matrix class we worked on in the class with a toString method and an add method](java/Matrix)
+
+## Week 2
+## Lecture
+- If you missed Mondays class, check out this introduction to [Java from the Java Tutorial](http://docs.oracle.com/javase/tutorial/)
+- [The Matrix example we worked on in the class](java/Matrix)
  
 # Tutorial
 Today we will make some changes to the Java code we wrote in the class on Monday. Fire up the git bash shell and clone the repo for the course using:
