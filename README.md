@@ -23,8 +23,62 @@ Resources
 
 # Semester 2
 ## Week 3
-## [The matrix class we worked on in the class with a toString method and an add method](java/Matrix)
+- [All about Matrices](https://www.khanacademy.org/math/precalculus/precalc-matrices)
+- [Matrix multiplication](http://www.mathsisfun.com/algebra/matrix-multiplying.html)
+- [Stackoverflow question about static in java](http://stackoverflow.com/questions/413898/what-does-the-static-keyword-do-in-a-class)
+- [The matrix class we worked on in the class with a toString method and an add method](java/Matrix)	
 
+## Lab
+Today we will be adding methods to the Matrix class to allow matrix multiplication. Check out the Matrix code we worked on in the class that implements methods for matrix addition. In the class, we implemented two methods for addition that allows us to perform the following operations:
+
+- A+= B - This is the *non-static* method add that takes one parameter  
+- A = B + C - This is the *static* method that takes two parameters.
+
+Read [this article on static in Java](http://stackoverflow.com/questions/413898/what-does-the-static-keyword-do-in-a-class) if you missed the class.
+
+- Write a non-static method mult(Matrix b) that multiplies the current matrix by the b matrix.
+- Write a static method mult(Matrix2D a, Matrix2D b) that multiplies the a and b matrices together and returns a new matrix.
+- Put the following test code into your Main method:
+
+```Java
+Matrix a = new Matrix(4, 4);
+a.identity();
+a.setElement(2, 3, 7);
+a.setElement(3, 1, 2);
+a.setElement(3, 0, 4);
+
+Matrix b = new Matrix(4, 4);
+b.identity();
+b.setElement(2, 3, 1);
+b.setElement(3, 1, 9);
+b.setElement(3, 0, -7);
+
+Matrix2D c;
+c = Matrix.mult(a, b); // How to call a static method
+
+System.out.println(a);
+System.out.println(b);
+System.out.println(c);
+```
+
+Your program should output the following:
+
+```
+1.0 0.0 0.0 0.0
+0.0 1.0 0.0 0.0
+0.0 0.0 1.0 7.0
+4.0 2.0 0.0 1.0
+
+1.0 0.0 0.0 0.0
+0.0 1.0 0.0 0.0
+0.0 0.0 1.0 1.0
+-7.0 9.0 0.0 1.0
+
+1.0 0.0 0.0 0.0
+0.0 1.0 0.0 0.0
+-49.0 63.0 1.0 8.0
+-3.0 11.0 0.0 1.0
+```
 ## Week 2
 ## Lecture
 - If you missed Mondays class, check out this introduction to [Java from the Java Tutorial](http://docs.oracle.com/javase/tutorial/)
