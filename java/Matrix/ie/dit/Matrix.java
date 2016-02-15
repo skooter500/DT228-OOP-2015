@@ -48,12 +48,7 @@ public class Matrix
 			}
 		}
 	}
-	
-	public void mult(Matrix b)
-	{
 		
-	}
-	
 	
 	// This method applies to the class Matrix
 	// Not an instance of the class
@@ -92,6 +87,63 @@ public class Matrix
 				}									
 			}
 		}
+	}
+	
+	public static Matrix mult(Matrix a, Matrix b)
+	{
+		Matrix c = new Matrix(a.getRows(), b.getCols());
+
+		for (int row = 0; row < a.getRows(); row++)
+		{
+			for (int col = 0; col < b.getCols(); col++)
+			{
+				float sum = 0.0f;
+				for (int i = 0; i < a.getCols(); i++)
+				{
+					sum += a.getElement(row, i) * b.getElement(i, col);
+				}
+				c.setElement(row, col, sum);
+			}
+		}
+		return c;
+	}
+	
+	public void mult(Matrix b)
+	{
+		for (int row = 0; row < getRows(); row++)
+		{
+			for (int col = 0; col < b.getCols(); col++)
+			{
+				float sum = 0.0f;
+				for (int i = 0; i < getCols(); i++)
+				{
+					sum += getElement(row, i) * b.getElement(i, col);
+				}
+				setElement(row, col, sum);
+			}
+		}
+	}
+	
+	public Vector transform(Vector v)
+	{
+		Matrix temp = new Matrix(1, 3);
+		temp.setElement(0, 0, v.x);
+		temp.setElement(0, 1, v.y);
+		temp.setElement(0, 2, 1);
+		
+		temp.mult(this);
+		return new Vector(temp.getElement(0, 0), temp.getElement(0, 1));
+	}
+	
+	public static Matrix rotation(float theta)
+	{
+		Matrix m = new Matrix(3, 3);
+		m.identity();
+		m.setElement(0, 0, (float) Math.cos(theta));
+		m.setElement(0, 1, (float) -Math.sin(theta));
+		m.setElement(1, 0, (float) Math.sin(theta));
+		m.setElement(1, 1, (float) Math.cos(theta));		
+		return m;
 	}
 	
 	public String toString()

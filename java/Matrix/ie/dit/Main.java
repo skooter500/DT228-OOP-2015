@@ -16,5 +16,12 @@ public class Main
 		Matrix c = Matrix.add(m, m1);
 		System.out.println(c);
 		
+		Vector a = new Vector(0, 10);
+		Matrix rot = Matrix.rotation((float) Math.PI);
+		
+		Vector b = rot.transform(a);
+		System.out.println(a);
+		System.out.println(b);
+		
 	}
 }
