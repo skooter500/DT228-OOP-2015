@@ -24,6 +24,11 @@ public class Matrix
 		elements = new float[rows][cols];
 	}
 	
+	public void setElement(int row, int col, float value)
+	{
+		elements[row][col] = value;
+	}
+	
 	public float getElement(int row, int col)
 	{
 		return elements[row][col];
@@ -42,6 +47,11 @@ public class Matrix
 				//		+ b.getElement(row, col));
 			}
 		}
+	}
+	
+	public void mult(Matrix b)
+	{
+		
 	}
 	
 	
@@ -64,10 +74,7 @@ public class Matrix
 		return ret;		
 	}
 	
-	public void setElement(int row, int col, float value)
-	{
-		elements[row][col] = value;
-	}
+	
 	
 	public void identity()
 	{
