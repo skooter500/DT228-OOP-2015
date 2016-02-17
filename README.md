@@ -22,6 +22,75 @@ Resources
 * Slack: [dt228-oop-2015.slack.com](https://dt228-oop-2015.slack.com)
 
 # Semester 2
+
+## Week 4
+- [All about the Levenshtein Distance from my PhD thesis. This might be a bit complicated to read](docs/EditDistance.pdf)
+- A lecture I gave about the Levenshtein Distance algorithm from a few years ago:
+
+  [![YouTube](http://img.youtube.com/vi/8Uj97J85c/0.jpg)](https://www.youtube.com/watch?v=8Uj97J85c)
+
+- [Transformation matrices from the Khan Academy (what we did in the tutorial)](https://www.khanacademy.org/math/precalculus/precalc-matrices/matrices-as-transformations/v/transforming-position-vector)
+- [Rotation matrices](https://en.wikipedia.org/wiki/Rotation_matrix)
+
+## Lab
+### Learning Outcomes
+- Have fun implementing the Levenshtein Distance. Its a cool algorithm when you get it to work :-)
+- See what matrices are used for
+- Build a component of a music information retrieval system
+
+Today lets implement the Levenstein Distance algorithm (also known as the Edit Distance) in Java. Of course you can Google this and you will find lots of solutions online in 5 seconds. But don't do this. Instead, try and implement it from your memory and your notes from the class on Monday. If you weren't here then try asking one of your classmates to explain it to you instead of Googling the solution, or watch the video I put up.
+
+Here is how I suggest you do it:
+
+- Take the Matrix Java project we were working and use it as starter code. You can clone the repo to get it. This also has the transformations we worked on in the tutorial
+- Create a new class called EditDistance.java in the same package as the other classes. 
+- Create a static method on the class called min3 that takes three float parameters and returns the minimum of these three numbers
+- Create a static method on the class called MinimumEditDistance that takes two String parameters, neele and haystack that evaluates the minimum edit distance between needle and haystack. Implement the Levenstein Distance algorithm to calculate this. You should probably print out the matrix by calling the toString method to verify that it is set up correctly
+- In the Main class, add this code:
+
+```Java
+String sa = "I love DIT";
+String sb = "I love Tunepal";
+System.out.println("Edit distance between: " + sa + " and: " + sb + " is " + EditDistance.MinimumEditDistance(sa, sb));
+
+sa = "Games Fleadh";
+sb = "Imagine Cup";
+System.out.println("Edit distance between: " + sa + " and: " + sb + " is " + EditDistance.MinimumEditDistance(sa, sb));
+```
+- It should print the following:
+
+```
+$ java ie.dit.Main
+0.0 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0 14.0
+1.0 0.0 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0
+2.0 1.0 0.0 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 12.0
+3.0 2.0 1.0 0.0 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0
+4.0 3.0 2.0 1.0 0.0 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0 10.0
+5.0 4.0 3.0 2.0 1.0 0.0 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0
+6.0 5.0 4.0 3.0 2.0 1.0 0.0 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0
+7.0 6.0 5.0 4.0 3.0 2.0 1.0 0.0 1.0 2.0 3.0 4.0 5.0 6.0 7.0
+8.0 7.0 6.0 5.0 4.0 3.0 2.0 1.0 1.0 3.0 3.0 5.0 5.0 7.0 7.0
+9.0 8.0 7.0 6.0 5.0 4.0 3.0 2.0 2.0 2.0 3.0 6.0 6.0 6.0 7.0
+10.0 9.0 8.0 7.0 6.0 5.0 4.0 3.0 2.0 3.0 3.0 7.0 7.0 7.0 7.0
+
+Edit distance between: I love DIT and: I love Tunepal is 7.0
+0.0 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0
+1.0 1.0 3.0 3.0 5.0 5.0 7.0 7.0 9.0 9.0 11.0 11.0
+2.0 2.0 2.0 3.0 6.0 6.0 6.0 7.0 10.0 10.0 10.0 11.0
+3.0 3.0 2.0 4.0 4.0 5.0 6.0 8.0 8.0 9.0 10.0 12.0
+4.0 4.0 3.0 3.0 4.0 6.0 6.0 6.0 7.0 8.0 9.0 10.0
+5.0 5.0 4.0 4.0 4.0 7.0 7.0 7.0 7.0 9.0 9.0 11.0
+6.0 6.0 5.0 5.0 5.0 5.0 6.0 7.0 7.0 10.0 10.0 10.0
+7.0 7.0 6.0 6.0 6.0 6.0 6.0 8.0 8.0 8.0 9.0 10.0
+8.0 8.0 7.0 7.0 7.0 7.0 7.0 7.0 8.0 9.0 9.0 11.0
+9.0 9.0 8.0 8.0 8.0 8.0 8.0 7.0 9.0 9.0 10.0 10.0
+10.0 10.0 9.0 8.0 9.0 9.0 9.0 8.0 8.0 9.0 11.0 11.0
+11.0 11.0 10.0 9.0 9.0 10.0 10.0 9.0 9.0 9.0 12.0 12.0
+12.0 12.0 11.0 10.0 10.0 10.0 11.0 10.0 10.0 10.0 10.0 11.0
+
+Edit distance between: Games Fleadh and: Imagine Cup is 11.0
+```
+
 ## Week 3
 - [All about Matrices](https://www.khanacademy.org/math/precalculus/precalc-matrices)
 - [Matrix multiplication](http://www.mathsisfun.com/algebra/matrix-multiplying.html)
