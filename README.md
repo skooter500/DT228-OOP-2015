@@ -27,7 +27,7 @@ Resources
 - [All about the Levenshtein Distance from my PhD thesis. This might be a bit complicated to read](docs/EditDistance.pdf)
 - A lecture I gave about the Levenshtein Distance algorithm from a few years ago:
 
-  [![YouTube](http://img.youtube.com/vi/8Uj97J85c/0.jpg)](https://www.youtube.com/watch?v=8Uj97J85c)
+  [![YouTube](http://img.youtube.com/vi/9-8Uj97J85c/0.jpg)](https://www.youtube.com/watch?v=9-8Uj97J85c)
 
 - [Transformation matrices from the Khan Academy (what we did in the tutorial)](https://www.khanacademy.org/math/precalculus/precalc-matrices/matrices-as-transformations/v/transforming-position-vector)
 - [Rotation matrices](https://en.wikipedia.org/wiki/Rotation_matrix)
