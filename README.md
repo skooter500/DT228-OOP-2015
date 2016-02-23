@@ -23,6 +23,10 @@ Resources
 
 # Semester 2
 
+## Week 5
+- [Exceptions in Java](http://docs.oracle.com/javase/tutorial/essential/exceptions/)
+- [The Matrix class with Exceptions (The spell checker project we worked on in the class)](java\SpellChecker)
+
 ## Week 4
 - [All about the Levenshtein Distance from my PhD thesis. This might be a bit complicated to read](docs/EditDistance.pdf)
 - A lecture I gave about the Levenshtein Distance algorithm from a few years ago:
@@ -90,6 +94,8 @@ Edit distance between: I love DIT and: I love Tunepal is 7.0
 
 Edit distance between: Games Fleadh and: Imagine Cup is 11.0
 ```
+
+- [Solution to the Lab](java/Levenshtein)
 
 ## Week 3
 - [All about Matrices](https://www.khanacademy.org/math/precalculus/precalc-matrices)

@@ -52,7 +52,7 @@ public class Matrix
 	
 	// This method applies to the class Matrix
 	// Not an instance of the class
-	public static Matrix add(Matrix a, Matrix b)
+	public static Matrix add(Matrix a, Matrix b) 
 	{
 		Matrix ret = new Matrix(a.getRows(), a.getCols());
 		
@@ -89,8 +89,13 @@ public class Matrix
 		}
 	}
 	
-	public static Matrix mult(Matrix a, Matrix b)
+	public static Matrix mult(Matrix a, Matrix b) 
 	{
+		if (a.getRows() != b.getCols())
+		{
+			throw new MatrixException("Rows in a must be equal to cols in a");
+		}
+
 		Matrix c = new Matrix(a.getRows(), b.getCols());
 
 		for (int row = 0; row < a.getRows(); row++)
