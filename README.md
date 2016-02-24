@@ -26,6 +26,72 @@ Resources
 ## Week 5
 - [Exceptions in Java](http://docs.oracle.com/javase/tutorial/essential/exceptions/)
 - [The Matrix class with Exceptions (The spell checker project we worked on in the class)](java\SpellChecker)
+- [Sorting an array list](http://beginnersbook.com/2013/12/java-arraylist-of-object-sort-example-comparable-and-comparator/)
+- [Yoda conditions](https://en.wikipedia.org/wiki/Yoda_conditions)
+
+## Lab
+
+### Learning outcomes
+- Learn how to sort an ArrayList using the Collections framework
+- Learn how to implement an interface from the JDK
+- Get practice constructing an algorithm
+
+In this lab we will implement the ability to give the print the top 10 closest words from the dictionary instead of just printing the closest match. Here is what the output of the final program might look like:
+
+
+```
+$ java ie.dit.Main
+Enter a word or quit:
+hello
+Did you mean:
+bell
+help
+hollow
+jelly
+well
+yellow
+all
+ball
+fall
+full
+Enter a word or quit:
+milk
+Correct match
+Enter a word or quit:
+moon
+Correct match
+Enter a word or quit:
+yellow
+Correct match
+Enter a word or quit:
+bryan
+Did you mean:
+bread
+brown
+bad
+bag
+band
+basin
+boat
+boy
+brake
+branch
+Enter a word or quit:
+quit
+
+```
+
+To complete this lab:
+
+- Clone the repo to get the program we worked on in the class and in the tutorial and study it carefully.
+- [Read this article that explains how you can sort an ArrayList](http://beginnersbook.com/2013/12/java-arraylist-of-object-sort-example-comparable-and-comparator/). If you need to, read it several times!
+- You will notice there is an unimplemented method ```public String[] findClosest(String toFind, int howMany)``` in the class Dictionary. At the moment it just returns null, but you should implement this method.
+- Modify the Main method to call the new method you wrote that returns a String array instead of the method that returns a String. Make whatever other changes are necessary.
+
+In detail:
+
+>! Spoiler text
+>! Spoiler text
 
 ## Week 4
 - [All about the Levenshtein Distance from my PhD thesis. This might be a bit complicated to read](docs/EditDistance.pdf)
