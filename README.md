@@ -27,7 +27,8 @@ Resources
 - [Exceptions in Java](http://docs.oracle.com/javase/tutorial/essential/exceptions/)
 - [The Matrix class with Exceptions (The spell checker project we worked on in the class)](java\SpellChecker)
 - [Sorting an array list](http://beginnersbook.com/2013/12/java-arraylist-of-object-sort-example-comparable-and-comparator/)
-- [Yoda conditions](https://en.wikipedia.org/wiki/Yoda_conditions)
+- [Yoda conditions](https://en.wikipedia.org/wiki/Yoda_conditions
+- [Comparing Strings in Java](http://stackoverflow.com/questions/513832/how-do-i-compare-strings-in-java)
 
 ## Lab
 
