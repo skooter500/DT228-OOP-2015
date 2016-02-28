@@ -23,11 +23,17 @@ Resources
 
 # Semester 2
 
+## Week 6
+- [Solution to last week's lab](java/SpellChecker2)
+- [Get IntelliJ](https://www.jetbrains.com/student/)
+- [Get Eclipse](https://eclipse.org/downloads)
+- [Getting started with Eclipse and Processing](https://processing.org/tutorials/eclipse/)
+
 ## Week 5
 - [Exceptions in Java](http://docs.oracle.com/javase/tutorial/essential/exceptions/)
-- [The Matrix class with Exceptions (The spell checker project we worked on in the class)](java\SpellChecker)
+- [The Matrix class with Exceptions (The spell checker project we worked on in the class)](java\SpellChecker1)
 - [Sorting an array list](http://beginnersbook.com/2013/12/java-arraylist-of-object-sort-example-comparable-and-comparator/)
-- [Yoda conditions](https://en.wikipedia.org/wiki/Yoda_conditions
+- [Yoda conditions](https://en.wikipedia.org/wiki/Yoda_conditions)
 - [Comparing Strings in Java](http://stackoverflow.com/questions/513832/how-do-i-compare-strings-in-java)
 
 ## Lab
@@ -88,8 +94,9 @@ To complete this lab:
 - [Read this article that explains how you can sort an ArrayList](http://beginnersbook.com/2013/12/java-arraylist-of-object-sort-example-comparable-and-comparator/). If you need to, read it several times!
 - You will notice there is an unimplemented method ```public String[] findClosest(String toFind, int howMany)``` in the class Dictionary. At the moment it just returns null, but you should implement this method.
 - Modify the Main method to call the new method you wrote that returns a String array instead of the method that returns a String. Make whatever other changes are necessary.
-- I strongly suggest you take the time to think about how you would do this. If you can't figure it out, here are [step by step instructions](instructions.md). Only use these if you can't figure it out.
+- I strongly suggest you take the time to think about how you would do this. If you can't figure it out, here are [step by step instructions](instructions.md). Only use these if you can't figure it out
 
+- [Solution to the lab](java/SpellChecker2)
 
 ## Week 4
 - [All about the Levenshtein Distance from my PhD thesis. This might be a bit complicated to read](docs/EditDistance.pdf)
