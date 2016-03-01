@@ -88,13 +88,13 @@ Today lets use Eclipse and Processing with the Minim library to implement a simp
 - Don't forget to add core.jar and the minim libraries to your Java build path! There is a [tutorial we did yesterday](https://github.com/skooter500/EclipseWithProcessing) that might be useful if you neeed to figure out how to set the Java build path. Make sure and follow the right set of instructions for the version of Processing you have installed. 
 - Take some time to read through this [introduction to digital audio](http://www.jiscdigitalmedia.ac.uk/guide/an-introduction-to-digital-audio) if you are interested in learning more about how digital audio and sound works. It's very interesting.
 
-Digital audio samples the voltage coming from the microphone and stores these voltages as floating point numbers. For CD quality audio, the microphone is sampled 44100 times per second. If you play a note on an instrument and plot the samples on a graph, it would look something like this:
+Digital audio samples the voltage coming from the microphone and stores these voltages as floating point numbers. For CD quality audio, the microphone is sampled 44100 times per second. If you play a note on an instrument like a tin-whistle or a piano and plot the samples on a graph, it would look something like this:
 
-![Sketch](p18.png)
+![Sketch](images/p18.png)
 
 You might notice that this looks a little like a plot of the sin function:
 
-![Sketch](p19.png)
+![Sketch](images/p19.png)
 
 However real instruments generate "harmonics" and so it will never be a perfect sine wave. These are caused by the physical properties of the instrument. 
 
