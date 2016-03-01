@@ -81,6 +81,7 @@ public class AudioViz extends PApplet {
 - Lear how to use the Eclipse debugger
 - Learn how to link with external jar files in Eclipse
 - Learn a little bit about how sound works
+- Improve your computational thinking skills by implementing the zero crossings algorithm.
 
 Today lets use Eclipse and Processing with the Minim library to implement a simple pitch detection algorithm called Zero Crossings in order to figure out the musical note that is playing. Feel free to use IntelliJ instead if you prefer.
 
