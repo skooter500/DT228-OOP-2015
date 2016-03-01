@@ -28,6 +28,7 @@ Resources
 - [Get IntelliJ](https://www.jetbrains.com/student/)
 - [Get Eclipse](https://eclipse.org/downloads)
 - [Getting started with Eclipse and Processing](https://processing.org/tutorials/eclipse/)
+- [A tutorial project that uses the Processing libraries through Eclipse](https://github.com/skooter500/EclipseWithProcessing)
 
 Here is the program we wrote in the class yesterday:
 
