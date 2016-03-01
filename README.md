@@ -74,6 +74,74 @@ public class AudioViz extends PApplet {
 }
 ```
 
+## Lab
+
+### Learning Outcomes
+- Learn how to write Java code using Eclipse
+- Lear how to use the Eclipse debugger
+- Learn how to link with external jar files in Eclipse
+- Learn a little bit about how sound works
+
+Today lets use Eclipse and Processing with the Minim library to implement a simple pitch detection algorithm called Zero Crossings in order to figure out the musical note that is playing. Feel free to use IntelliJ instead if you prefer.
+
+- Get the code we worked on in the class that implements the music visualiser (above) and get it compiling in your IDE.
+- Don't forget to add core.jar and the minim libraries to your Java build path! There is a [tutorial we did yesterday](https://github.com/skooter500/EclipseWithProcessing) that might be useful if you neeed to figure out how to set the Java build path. Make sure and follow the right set of instructions for the version of Processing you have installed. 
+- Take some time to read through this [introduction to digital audio](http://www.jiscdigitalmedia.ac.uk/guide/an-introduction-to-digital-audio) if you are interested in learning more about how digital audio and sound works. It's very interesting.
+
+Digital audio samples the voltage coming from the microphone and stores these voltages as floating point numbers. For CD quality audio, the microphone is sampled 44100 times per second. If you play a note on an instrument and plot the samples on a graph, it would look something like this:
+
+![Sketch](p18.png)
+
+You might notice that this looks a little like a plot of the sin function:
+
+![Sketch](p19.png)
+
+However real instruments generate "harmonics" and so it will never be a perfect sine wave. These are caused by the physical properties of the instrument. 
+
+Different musical notes are caused by the the air vibrating at different frequencies. For example, when we hear the note D the wave will repeat 293 times in a second. When we hear the note A, the wave will repeat 440 times in a second. A single "wave" in the audio is called a "period".
+
+One simple way of figuring out the frequency, and hence that note that is playing is to count the number of periods that occur in one second. If you notice the waveforms above, you can tell when the period ends, because the signal is above 0 for one sample and then dips to 0 or below in the next sample. By counting the number of times this occurs we can tell how many periods there are. Sometimes we dont have a full second of audio, we only have a short section, but we can still use the zero crossings algorithm and just multiply the result. This segment of audio is called a frame of audio. For example, if we only have 1024 samples and we are sampling at 44100Hz, then we have (1024 / 44100) seconds of audio. This works out at .023 of a second. If we counted 41 crossings in this frame we would multiply by 1 / .023 to get a frequency of 1765. The frequency of the note A6 is 1760, so we could conclude that the note was an A. This technique won't work all the time because of the harmonics, but its a good first step. If you take the time to understand all of the above you will know something cool and amazing.
+
+Using the Minim library, we can set the size of the frame using this code:
+
+```Java
+in = minim.getLineIn(Minim.MONO, FRAME_SIZE, sampleRate, 16);
+```
+
+You will get the best results by using bigger numbers for this. 1024 will probably work, but 2048 is better.
+
+You can get the frame size using:
+
+```Java
+in.bufferSize()
+```
+
+You can get the actual sample by using:
+
+```
+in.left.get(SAMPLE_INDEX);
+``` 
+- Write a method in your program ```public int countZeroCrossings()``` that uses the above two methods to count and return the zero crossings. The algorithm is pretty simple, so I'll let you figure it out for yourself.
+- Print out the value using the text command in Processing
+- You can use [this resource](http://onlinetonegenerator.com/) to generate sine wave tones of different frequencies to test your program.
+- Try singing different notes and see if your program calculates the frequencies correctly. Sing as loud as you like. You are learning.
+- You might need to plug a microphone into your computer if you are using a lab computer. Headphones will work well as a microphone if you have them.
+
+When we take a frequency and get the note name for that frequency, this is called "spelling" the frequency. Here is some Java code for the frequencies of the notes in several octaves of the the D Major scale. For musicians in the class, you will know that D Major has 2 sharps. F# and C#, so the frequencies for the notes F and C are those for F# and C#
+
+```Java
+float[] frequencies = {293.66f, 329.63f, 369.99f, 392.00f, 440.00f, 493.88f, 554.37f, 587.33f
+			, 659.25f, 739.99f, 783.99f, 880.00f, 987.77f, 1108.73f, 1174.66f};
+	String[] spellings = {"D,", "E,", "F,", "G,", "A,", "B,", "C", "D", "E", "F", "G", "A", "B","c", "d", "e", "f", "g", "a", "b", "c'", "d'", "e'", "f'", "g'", "a'", "b'", "c''", "d''"}; 	
+```	
+- Write a method called ```public String spell(float frequency)``` that takes a frequency as a parameter and returns the closest note to the frequency
+
+Here is a video of what your finished program might look like:
+
+[![YouTube](http://img.youtube.com/vi/KOuete3f21c/0.jpg)](http://www.youtube.com/watch?v=KOuete3f21c)
+ 
+Login to Webcourses and do the MCQ. Jump on the slack and let me know how you get on. Post screenshots.
+
 ## Week 5
 - [Exceptions in Java](http://docs.oracle.com/javase/tutorial/essential/exceptions/)
 - [The Matrix class with Exceptions (The spell checker project we worked on in the class)](java\SpellChecker1)
