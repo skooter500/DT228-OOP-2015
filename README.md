@@ -29,6 +29,50 @@ Resources
 - [Get Eclipse](https://eclipse.org/downloads)
 - [Getting started with Eclipse and Processing](https://processing.org/tutorials/eclipse/)
 
+Here is the program we wrote in the class yesterday:
+
+```Java
+package ie.dit;
+
+import ddf.minim.AudioInput;
+import ddf.minim.Minim;
+import processing.core.PApplet;
+
+public class AudioViz extends PApplet {
+
+	Minim minum;
+	AudioInput in;
+	
+	public void setup()
+    {
+		minum = new Minim(this);
+		in = minum.getLineIn(Minim.MONO, width, 44100, 16);
+    }
+
+    public void settings()
+    {
+        size(530, 329);        
+    }
+
+    public void draw()
+    {
+    	background(0);
+    	stroke(255);
+    	float amp = 100;
+        for (int i = 0 ; i < in.bufferSize() ; i ++)
+        {
+        	line(i, height / 2, i, height / 2 + (in.left.get(i) * amp));
+        }
+    }
+
+    public static void main(String[] args)
+    {
+        String[] a = {"MAIN"};
+        PApplet.runSketch( a, new AudioViz());
+    }
+}
+```
+
 ## Week 5
 - [Exceptions in Java](http://docs.oracle.com/javase/tutorial/essential/exceptions/)
 - [The Matrix class with Exceptions (The spell checker project we worked on in the class)](java\SpellChecker1)
