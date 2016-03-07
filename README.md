@@ -97,7 +97,7 @@ You might notice that this looks a little like a plot of the sin function:
 
 ![Sketch](images/p19.png)
 
-However real instruments generate "harmonics" and so it will never be a perfect sine wave. These are caused by the physical properties of the instrument. 
+However real instruments generate "harmonics" and so it will never be a perfect sine wave. These are caused by the physical properties of the instrument. That's why the plot of the music not is not a perfect sine wave. 
 
 Different musical notes are caused by the the air vibrating at different frequencies. For example, when we hear the note D the wave will repeat 293 times in a second. When we hear the note A, the wave will repeat 440 times in a second. A single "wave" in the audio is called a "period".
 
