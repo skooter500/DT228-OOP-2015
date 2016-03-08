@@ -22,6 +22,12 @@ Resources
 * Slack: [dt228-oop-2015.slack.com](https://dt228-oop-2015.slack.com)
 
 # Semester 2
+## Week 7
+- [Pitch detection using zero crossings and using an FFT Example program](eclipse/AudioVis2)
+- And a video of the complete program:
+
+    [![YouTube](http://img.youtube.com/vi/d7lJ_nyCDQA/0.jpg)](https://www.youtube.com/watch?v=d7lJ_nyCDQA)
+
 
 ## Week 6
 - [Solution to last week's lab](java/SpellChecker2)

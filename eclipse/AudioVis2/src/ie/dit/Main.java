@@ -20,17 +20,18 @@ public class Main extends PApplet
 	//String[] spellings = {"D,", "E,", "F,", "G,", "A,", "B,", "C", "D", "E", "F", "G", "A", "B","c", "d", "e", "f", "g", "a", "b", "c'", "d'", "e'", "f'", "g'", "a'", "b'", "c''", "d''"}; 	
 	String[] spellings = {"D", "E", "F", "G", "A", "B", "C", "D", "E", "F", "G", "A", "B","C", "D", "E", "F", "G", "A", "B", "C", "D", "E", "F", "G", "A", "B", "C", "D"};
 	int sampleRate = 44100;
+	int frameSize = 1024;
 	FFT fft;
 	
 	
 	public void setup()
 	{
-		size(2048, 500);
+		size(frameSize, 500);
 		smooth();
 		minim = new Minim(this);
 		
-		in = minim.getLineIn(Minim.MONO, width, sampleRate, 16);
-		fft = new FFT(width, sampleRate);
+		in = minim.getLineIn(Minim.MONO, frameSize, sampleRate, 16);
+		fft = new FFT(frameSize, sampleRate);
 		min = Float.MAX_VALUE;
 		max = Float.MIN_VALUE;
 	}
@@ -67,6 +68,7 @@ public class Main extends PApplet
 	
 	public float FFTFreq()
 	{
+		// Find the higest entry in the FFT and convert to a frequency
 		float maxValue = Float.MIN_VALUE;
 		int maxIndex = -1;
 		for (int i = 0 ; i < fft.specSize() ; i ++)
@@ -144,35 +146,10 @@ public class Main extends PApplet
 		ellipse(width / 2, height / 2, smallRadius, smallRadius);		
 	}
 	
-	/*
-	public void draw()
-	{
-		background(0);
-		stroke(255);
-		for (int i = 0 ; i < in.bufferSize(); i ++)
-		{
-			float sample = in.left.get(i);
-			if (sample < min)
-			{
-				min = sample;
-			}
-			
-			if (sample > max)
-			{
-				max = sample;
-			}
-			sample *= 100.0;
-			line(i, height / 2, i,  (height / 2) + sample);
-			//point(i, (height / 2) + sample);
-		}
-		
-		text("Max: " + max, 10, 10);
-		text("Min: " + min, 10, 30);		
-	}
-	*/
+
 
 	public static void main(String[] args)
 	{
-		PApplet.main(new String[] {"--present", "ie.dit.Main"});
+		PApplet.main(Main.class.getName());	
 	}
 }

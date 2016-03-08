@@ -17,6 +17,20 @@ public class Main extends PApplet
 	                         
 	int sampleRate = 44100;
 	
+	FFT fft;
+	
+	public int countZeroCrossings()
+	{
+		int count = 0;
+		for (int i = 1 ; i < in.bufferSize() ; i ++)
+		{
+			if ((in.left.get(i - 1) > 0) && (in.left.get(i) <= 0))
+			{
+				count ++;
+			}
+		}
+		return count;
+	}
 	
 	public void setup()
 	{
@@ -25,6 +39,8 @@ public class Main extends PApplet
 		minim = new Minim(this);
 		
 		in = minim.getLineIn(Minim.MONO, width, sampleRate, 16);
+		
+		fft = new FFT(width, sampleRate);
 	}
 	
 	float lastRadius = 0;
@@ -51,6 +67,9 @@ public class Main extends PApplet
 			sample *= 100.0;
 			line(i, height / 2, i,  (height / 2) + sample);
 			average += Math.abs(in.left.get(i));
+			
+						
+			
 			//point(i, (height / 2) + sample);
 		}
 
@@ -61,6 +80,12 @@ public class Main extends PApplet
 		
 		fill(255);
 		text("Amp: " + average, 10, 10);
+		
+		int zc = countZeroCrossings();
+		float freq = (float) zc * ((float) sampleRate / (float) width);
+		
+		text("Frequency: " + freq, 10, 50);
+		
 		float smallRadius = 50;
 		float bigRadius = (smallRadius * 2) + (average * 500);
 		float myRadius = lerp(lastRadius, bigRadius, lerpSpeed);
@@ -71,6 +96,13 @@ public class Main extends PApplet
 		fill(0);
 		ellipse(width / 2, height / 2, smallRadius, smallRadius);		
 		lastRadius = myRadius;
+		
+		fft.forward(in.left);
+		stroke(0, 255, 255);
+		for (int i = 0 ; i < fft.specSize() ; i ++)
+		{
+			line(i, height, i, height - (fft.getBand(i) * 10));
+		}
 	}
 		
 	public static void main(String[] args)
