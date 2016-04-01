@@ -131,8 +131,8 @@ Some ideas:
 - An app
 
 Submission dates:
-- Git links/project abstract/team members 22 February
-- Project submission and demos 15 April (week after Easter). Submit git link & video link via Webcourses
+- Git links/project abstract/team members 
+- Project submission and demos 20 April. Submit git link & video link via Webcourses
 
 Marking Scheme:
 
