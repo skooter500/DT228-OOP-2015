@@ -21,7 +21,11 @@ Resources
 * Twitter: [@skooter500](http://twitter.com/skooter500)
 * Slack: [dt228-oop-2015.slack.com](https://dt228-oop-2015.slack.com)
 
-# Semester 2
+# Semester
+
+## Week 10
+- [Tunes sqlite database file](docs/tunes.sqlite)
+
 ## Week 7
 - [Pitch detection using zero crossings and using an FFT Example program](eclipse/AudioVis2)
 - And a video of the complete program:
@@ -49,7 +53,7 @@ public class AudioViz extends PApplet {
 
 	Minim minum;
 	AudioInput in;
-	
+
 	public void setup()
     {
 		minum = new Minim(this);
@@ -58,7 +62,7 @@ public class AudioViz extends PApplet {
 
     public void settings()
     {
-        size(530, 329);        
+        size(530, 329);
     }
 
     public void draw()
@@ -92,7 +96,7 @@ public class AudioViz extends PApplet {
 Today lets use Eclipse and Processing with the Minim library to implement a simple pitch detection algorithm called Zero Crossings in order to figure out the musical note that is playing. Feel free to use IntelliJ instead if you prefer.
 
 - Get the code we worked on in the class that implements the music visualiser (above) and get it compiling in your IDE.
-- Don't forget to add core.jar and the minim libraries to your Java build path! There is a [tutorial we did yesterday](https://github.com/skooter500/EclipseWithProcessing) that might be useful if you neeed to figure out how to set the Java build path. Make sure and follow the right set of instructions for the version of Processing you have installed. 
+- Don't forget to add core.jar and the minim libraries to your Java build path! There is a [tutorial we did yesterday](https://github.com/skooter500/EclipseWithProcessing) that might be useful if you neeed to figure out how to set the Java build path. Make sure and follow the right set of instructions for the version of Processing you have installed.
 - Take some time to read through this [introduction to digital audio](http://www.jiscdigitalmedia.ac.uk/guide/an-introduction-to-digital-audio) if you are interested in learning more about how digital audio and sound works. It's very interesting.
 
 Digital audio samples the voltage coming from the microphone and stores these voltages as floating point numbers. For CD quality audio, the microphone is sampled 44100 times per second. If you play a note on an instrument like a tin-whistle or a piano and plot the samples on a graph, it would look something like this:
@@ -103,7 +107,7 @@ You might notice that this looks a little like a plot of the sin function:
 
 ![Sketch](images/p19.png)
 
-However real instruments generate "harmonics" and so it will never be a perfect sine wave. These are caused by the physical properties of the instrument. That's why the plot of the music not is not a perfect sine wave. 
+However real instruments generate "harmonics" and so it will never be a perfect sine wave. These are caused by the physical properties of the instrument. That's why the plot of the music not is not a perfect sine wave.
 
 Different musical notes are caused by the the air vibrating at different frequencies. For example, when we hear the note D the wave will repeat 293 times in a second. When we hear the note A, the wave will repeat 440 times in a second. A single "wave" in the audio is called a "period".
 
@@ -127,7 +131,7 @@ You can get the actual sample by using:
 
 ```
 in.left.get(SAMPLE_INDEX);
-``` 
+```
 - Write a method in your program ```public int countZeroCrossings()``` that uses the above two methods to count and return the zero crossings. The algorithm is pretty simple, so I'll let you figure it out for yourself.
 - Print out the value using the text command in Processing
 - You can use [this resource](http://onlinetonegenerator.com/) to generate sine wave tones of different frequencies to test your program.
@@ -139,14 +143,14 @@ When we take a frequency and get the note name for that frequency, this is calle
 ```Java
 float[] frequencies = {293.66f, 329.63f, 369.99f, 392.00f, 440.00f, 493.88f, 554.37f, 587.33f
 			, 659.25f, 739.99f, 783.99f, 880.00f, 987.77f, 1108.73f, 1174.66f};
-	String[] spellings = {"D,", "E,", "F,", "G,", "A,", "B,", "C", "D", "E", "F", "G", "A", "B","c", "d", "e", "f", "g", "a", "b", "c'", "d'", "e'", "f'", "g'", "a'", "b'", "c''", "d''"}; 	
-```	
+	String[] spellings = {"D,", "E,", "F,", "G,", "A,", "B,", "C", "D", "E", "F", "G", "A", "B","c", "d", "e", "f", "g", "a", "b", "c'", "d'", "e'", "f'", "g'", "a'", "b'", "c''", "d''"};
+```
 - Write a method called ```public String spell(float frequency)``` that takes a frequency as a parameter and returns the closest note to the frequency
 
 Here is a video of what your finished program might look like:
 
 [![YouTube](http://img.youtube.com/vi/KOuete3f21c/0.jpg)](http://www.youtube.com/watch?v=KOuete3f21c)
- 
+
 Login to Webcourses and do the MCQ. Jump on the slack and let me know how you get on. Post screenshots.
 
 ## Week 5
@@ -238,7 +242,7 @@ Today lets implement the Levenstein Distance algorithm (also known as the Edit D
 Here is how I suggest you do it:
 
 - Take the Matrix Java project we were working and use it as starter code. You can clone the repo to get it. This also has the transformations we worked on in the tutorial
-- Create a new class called EditDistance.java in the same package as the other classes. 
+- Create a new class called EditDistance.java in the same package as the other classes.
 - Create a static method on the class called min3 that takes three float parameters and returns the minimum of these three numbers
 - Create a static method on the class called MinimumEditDistance that takes two String parameters, neele and haystack that evaluates the minimum edit distance between needle and haystack. Implement the Levenstein Distance algorithm to calculate this. You should probably print out the matrix by calling the toString method to verify that it is set up correctly
 - In the Main class, add this code:
@@ -292,12 +296,12 @@ Edit distance between: Games Fleadh and: Imagine Cup is 11.0
 - [All about Matrices](https://www.khanacademy.org/math/precalculus/precalc-matrices)
 - [Matrix multiplication](http://www.mathsisfun.com/algebra/matrix-multiplying.html)
 - [Stackoverflow question about static in java](http://stackoverflow.com/questions/413898/what-does-the-static-keyword-do-in-a-class)
-- [The matrix class we worked on in the class with a toString method and an add method](java/Matrix)	
+- [The matrix class we worked on in the class with a toString method and an add method](java/Matrix)
 
 ## Lab
 Today we will be adding methods to the Matrix class to allow matrix multiplication. Check out the Matrix code we worked on in the class that implements methods for matrix addition. In the class, we implemented two methods for addition that allows us to perform the following operations:
 
-- A+= B - This is the *non-static* method add that takes one parameter  
+- A+= B - This is the *non-static* method add that takes one parameter
 - A = B + C - This is the *static* method that takes two parameters.
 
 Read [this article on static in Java](http://stackoverflow.com/questions/413898/what-does-the-static-keyword-do-in-a-class) if you missed the class.
@@ -349,7 +353,7 @@ Your program should output the following:
 ## Lecture
 - If you missed Mondays class, check out this introduction to [Java from the Java Tutorial](http://docs.oracle.com/javase/tutorial/)
 - [The Matrix example we worked on in the class](java/Matrix)
- 
+
 # Tutorial
 Today we will make some changes to the Java code we wrote in the class on Monday. Fire up the git bash shell and clone the repo for the course using:
 
@@ -389,10 +393,10 @@ java ie.dit.Main
 - Abstract classes & interfaces class:
 
 	[![YouTube](http://img.youtube.com/vi/4yVTkG-a6zo/0.jpg)](https://www.youtube.com/watch?v=4yVTkG-a6zo)
-	 	
-- [The SpaceWar game with collisions, abstract classes, interfaces for powerups and bullets colliding with playeres](processing/classes6) 	
 
-## Lab 
+- [The SpaceWar game with collisions, abstract classes, interfaces for powerups and bullets colliding with playeres](processing/classes6)
+
+## Lab
 - Work on your assignment
 
 # Semester 1
@@ -403,7 +407,7 @@ java ie.dit.Main
 * [The program we wrote in class](processing/intro/intro.pde)
 * [The contract for this course](http://1drv.ms/1DbmnG9)
 
-Some Processing assignments from previous years: 
+Some Processing assignments from previous years:
 
 [![YouTube](http://img.youtube.com/vi/S575a92AsuQ/0.jpg)](https://www.youtube.com/watch?v=S575a92AsuQ)
 
@@ -455,7 +459,7 @@ Finally try this one:
 
 Notice the mouths
 
-Feel free to experiment with colour!  
+Feel free to experiment with colour!
 
 When you are finished with thes exercises, [log onto webcourses](http://dit.ie/webcourses) and complete the MCQ for this week
 
@@ -467,13 +471,13 @@ When you are finished with thes exercises, [log onto webcourses](http://dit.ie/w
 ## Lecture
 * [The face moving in 4 directions sketch](processing/facearoundthewall)
 * Data types, the if statement and dynamic sketches in Processing video (from last year)
-  
+
   [![YouTube](http://img.youtube.com/vi/Y0b9W3UJ2BU/0.jpg)](https://www.youtube.com/watch?v=Y0b9W3UJ2BU)
 
 * The best of this weeks videos (incomplete making the moving smiley face video)
 
   [![YouTube](http://img.youtube.com/vi/Wr_Ev0Xqh_U/0.jpg)](https://www.youtube.com/watch?v=Wr_Ev0Xqh_U)
-   
+
 ## Lab
 
 ### Learning Outcomes
@@ -533,7 +537,7 @@ You can put all your code into the setup method as this sketch doesnt use any an
 
 This is how I suggest you think about the problem.
 
-- You will need a for loop that goes from 0 - TWO_PI. There will be twice as many steps as there are points on the star. 
+- You will need a for loop that goes from 0 - TWO_PI. There will be twice as many steps as there are points on the star.
 - You can use % (modulus) to decide whether the x and y values you calculate should be the tip of a point or base of the point (the pointy bit or the trough).
 - Use line in your solution
 - I strongly suggest you start the lab by just drawing a single star and then maybe move on to drawing multiple stars using a for loop.
@@ -545,7 +549,7 @@ This is how I suggest you think about the problem.
 - Add colours!
 - Go mad!
 
-When you are done, upload an image to the slack and do this weeks MCQ. 
+When you are done, upload an image to the slack and do this weeks MCQ.
 
 - [Solution to the lab](processing/star)
 
@@ -554,7 +558,7 @@ When you are done, upload an image to the slack and do this weeks MCQ.
 - Try and draw the following in Processing:
 
   ![Sketch](images/p6.png)
-  
+
 # Week 3
 
 ## Lecture
@@ -571,7 +575,7 @@ For this lab you will be making a sketch that allows the user to convert between
 
 [![YouTube](http://img.youtube.com/vi/GCziyTb0LF8/0.jpg)](https://www.youtube.com/watch?v=GCziyTb0LF8)
 
-The user should be able to click any one of the squares to "toggle" a bit on or off. The number in decimal should automatically change. For example, in the screenshot above, bits 0, 2 and 4 are turned on so the number is 1 + 4 + 16 = 21. 
+The user should be able to click any one of the squares to "toggle" a bit on or off. The number in decimal should automatically change. For example, in the screenshot above, bits 0, 2 and 4 are turned on so the number is 1 + 4 + 16 = 21.
 
 To complete the sketch you can use a boolean array. Remember arrays from first year? Arrays are a  collection of data all of the same type. Read  [this article that explians how arrays work in Processing](http://www.processing.org/reference/Array.html). A boolean array is just an array where every element is either true or false.
 
@@ -588,8 +592,8 @@ void setup()
 {
   size(500, 500);
   centX = width / 2;
-  centY = height / 2;  
-  
+  centY = height / 2;
+
   // And set their values here
 }
 
@@ -598,7 +602,7 @@ void draw()
 {
   background(127);
   // Do some stuff here
-  
+
   int number = binaryToDecimal(bytes);
   // This is how you print text in Processing
   fill(255);
@@ -610,7 +614,7 @@ int binaryToDecimal(boolean[] bytes)
   int ret = 0;
 
   // Implement this method
-  
+
   return ret;
 }
 
@@ -623,18 +627,18 @@ void mousePressed()
 
 What I suggest you do is:
 
-- Implement the method ```int binaryToDecimal(boolean[] bytes)```. 
+- Implement the method ```int binaryToDecimal(boolean[] bytes)```.
 - Set some of the bits in the bits array to be true and test the method you wrote by printing out the value.
 - Write code in the ```draw()``` method to draw boxes to represent the bits. The box should be black only if the appropriate bit is true.
 - Write code in the ```mousePressed()``` method to calculate which if any box the user has pressed the mouse onto and toggle the appropriate bit.
 
 ### Bonus!
-- Write the decimalToBinary method that uses the divide by 2 technique to convert from a decimal number to a binary string 
+- Write the decimalToBinary method that uses the divide by 2 technique to convert from a decimal number to a binary string
 - Print the bit numbers over the boxes
 - Implement 2's complement.
 - Colours! Lights! Animations!
 
-## Tutorial 
+## Tutorial
 - [Solution to the lab](processing/binaryToDecimal)
 - [A slightly different solution to the lab](processing/binaryToDecimal)
 
@@ -657,8 +661,8 @@ What I suggest you do is:
 
 Log into the slack and let me know how you are getting on.
 
-Use the code you wrote yesterday in the class as starter code for today's lab. 
-If you missed the class, [this is a link to my version](processing/datawip). 
+Use the code you wrote yesterday in the class as starter code for today's lab.
+If you missed the class, [this is a link to my version](processing/datawip).
 
 Here is what you can try and make today:
 
@@ -668,21 +672,21 @@ These are the steps I suggest you follow:
 
 - Figure out how to draw a trend line graph first
 - Then figure out how to leave horizontal and vertical borders around the graph. I would suggest making a variable called border to control this.
-- Then figure out how to scale it so that it scales the data when drawing to the range 0-150. You could make this a variable 
+- Then figure out how to scale it so that it scales the data when drawing to the range 0-150. You could make this a variable
 - Then figure out how to draw the horizontal axis. This will be a for loop obviously. You might find the following Java/Processing methods useful:
   - [The Processing map method](https://processing.org/reference/map_.html)
   - [textAlign](https://processing.org/reference/textAlign_.html)
   - [substring](http://www.tutorialspoint.com/java/java_string_substring.htm)
 - Finally figure out how to draw the vertical axis. Another loop! This is the trickiest part I think
 
-Try and parameterise as much of your sketch with variables, so that you could reuse the code to graph other types of data. 
+Try and parameterise as much of your sketch with variables, so that you could reuse the code to graph other types of data.
 For example, I found it useful to write a method:
 
 ```Java
 void drawAxis(float[] data, String[] horizLabels, int verticalIntervals, int maxVertical, float border)
 ```
 
-to draw the horizontal and vertical axes. You might like to write seperate methods for the horizontal and vertical axis. 
+to draw the horizontal and vertical axes. You might like to write seperate methods for the horizontal and vertical axis.
 This took me about an hour to complete today, so it's tricky enough to get everything working, but worth it!
 Take a screenshot of your sketch and [upload it to the slack](http://dt228-oop-2015.slack.com)!
 
@@ -749,11 +753,11 @@ The file Dublin Airport.csv contains the rainfall data by month from 1850 - 2010
   ```Java
   ArrayList<ArrayList<Float>> data = new ArrayList<ArrayList<Float>>();
   ```
-  
-  Each entry in the first ArrayList will be an ArrayList containing the rainfall data by month for a year. 
-  
-  I suggest you skip over the year part when reading the file and just store the data. It will make your calculations easier. 
-  
+
+  Each entry in the first ArrayList will be an ArrayList containing the rainfall data by month for a year.
+
+  I suggest you skip over the year part when reading the file and just store the data. It will make your calculations easier.
+
 - Write code to figure out what *month* in the range 1850-2010 had the lowest and highest recorded rainfall
 
 - [Solution to various parts (not all) of the lab](processing/weatherData1)
@@ -789,7 +793,7 @@ The file Dublin Airport.csv contains the rainfall data by month from 1850 - 2010
 - Make commits
 - Make a class in Processing
 
-Today let's try and do some git stuff. For a start try cloning the git repository for the course. 
+Today let's try and do some git stuff. For a start try cloning the git repository for the course.
 
 - Fire up the bash shell and cd to folder that you want to clone the repo to and type:
 
@@ -797,11 +801,11 @@ Today let's try and do some git stuff. For a start try cloning the git repositor
 	git clone https://github.com/skooter500/DT228-OOP-2015
 	```
 
-	After a few seconds you will have your own copy of the repository for the course. 
+	After a few seconds you will have your own copy of the repository for the course.
 
-- Now lets create a Processing sketch and commit it to github. If you dont have one already, go and [create an account on github](http://github.com). At some stage you should sign up for the [github education program](https://education.github.com/) that gives you the ability to create private repos. 
-- Now create a new Processing sketch and add some code. Save the Processing sketch and call it whatever you like. For this lab, I will assume the sketch is called spacewar. 
-- Logon to your github account and create a repo for spacewar. 
+- Now lets create a Processing sketch and commit it to github. If you dont have one already, go and [create an account on github](http://github.com). At some stage you should sign up for the [github education program](https://education.github.com/) that gives you the ability to create private repos.
+- Now create a new Processing sketch and add some code. Save the Processing sketch and call it whatever you like. For this lab, I will assume the sketch is called spacewar.
+- Logon to your github account and create a repo for spacewar.
 
 	![Image](images/p10.png)
 
@@ -840,10 +844,10 @@ Today let's try and do some git stuff. For a start try cloning the git repositor
 	git commit -m "Initial version"
 	git push --set-upstream origin master
 	```
-- In your web browser, go to the github repository you created and verify that your files are all commited. 
+- In your web browser, go to the github repository you created and verify that your files are all commited.
 - Now lets make a change and make another commit. Edit your processing sketch and save the changes. Then type:
 
-	```bash 
+	```bash
 	git add .
 	git commit -m "Changes"
 	git push
@@ -855,7 +859,7 @@ Today let's try and do some git stuff. For a start try cloning the git repositor
 	git checkout -b new_branch
 	```
 
-	The -b flag means create a new branch. When you checkout a branch that means you switch to the branch and any commits you make from now will be on that branch. 
+	The -b flag means create a new branch. When you checkout a branch that means you switch to the branch and any commits you make from now will be on that branch.
 
 - Add a comment to the Processing sketch and save it.
 - At the bash shell type:
@@ -865,13 +869,13 @@ Today let's try and do some git stuff. For a start try cloning the git repositor
 	git commit -m "On the new branch"
 	git push --set-upstream origin new_branch
 	```
-	
+
 	Note! The --set-upstream origin new_branch is only necessary the first time you push to a new branch. It creates the connection between the local branch and the remote branch
 
 	Go to the repo page in your browser and verify that the new branch has been created.
 
 - Now lets switch branches to the master branch. Type:
-	
+
 	```bash
 	git checkout master
 	```
@@ -926,7 +930,7 @@ Log onto webcourses and do the MCQ for today. I will be on the slack if you have
 	[![YouTube](http://img.youtube.com/vi/v7o1CzGIJuE/0.jpg)](https://www.youtube.com/watch?v=v7o1CzGIJuE)
 
 - [Code we wrote in the tutorial](processing/expensesWIP)
- 
+
 # Week 9
 ## Lecture
 - Lecture video all about PVectors, pushMatrix, popMatrix, encapsulation, constructors, object references
@@ -963,7 +967,7 @@ You might want to clone/pull the repo for the course to get the code from yester
 
 ```bash
 git clone https://github.com/skooter500/DT228-OOP-2015
-``` 
+```
 
 The goals of today's lab:
 
@@ -971,13 +975,13 @@ The goals of today's lab:
 - Add multiple ships with different keyboard controls. For example, one Ship could use WASD and another ship could use IJKL
 - Each ship should have it's own colour
 - Bullets should take the ship colour
-- The players wrap around if they go off the bounds of the screen  
+- The players wrap around if they go off the bounds of the screen
 
 Advanced!
 - Bullets get removed from the scene when they go out of bounds of the scene
 - Ships can only fire 5 bullets per second
 
-I could tell you how to do all the above, but you will have much more fun if you figure all this out yourselves :-)I suggest you form teams of no more than 3 people and spend the first half of the lab studying the code from yesterday and coming up with a plan to implement each of the above goals. 
+I could tell you how to do all the above, but you will have much more fun if you figure all this out yourselves :-)I suggest you form teams of no more than 3 people and spend the first half of the lab studying the code from yesterday and coming up with a plan to implement each of the above goals.
 
 Some hints:
 
@@ -994,11 +998,11 @@ Upload a picture of whatever you made today to [Slack](http://dt228-oop-2015.sla
 
 # Week 11
 ## Lecture
-- [Dogs Cats and Sheep code](processing/DogsCats) 
+- [Dogs Cats and Sheep code](processing/DogsCats)
 - Video of the class:
 
 	[![YouTube](http://img.youtube.com/vi/nt2DzM5n8iw/0.jpg)](https://www.youtube.com/watch?v=nt2DzM5n8iw)
-	
+
 ## Lab
 ### Learning Outcomes
 - Refactor a program to use Polymorphism
@@ -1006,16 +1010,16 @@ Upload a picture of whatever you made today to [Slack](http://dt228-oop-2015.sla
 - Practice creating a class with a constructor
 - Practice using Polymorphism with an ArrayList
 
-Lets take the stuff we learned in the class and apply it to the SpaceWars game we are making. Instead of keeping track of instances of Ship and Bullets seperately, keep an ArrayList of GameObject's and use Polymorphism. You can start with your own code or [use the solution to last weeks lab that I made](processing/classes3). You will need to add update and render methods to the GameObject along with some other stuff you can figure out for yourself. 
+Lets take the stuff we learned in the class and apply it to the SpaceWars game we are making. Instead of keeping track of instances of Ship and Bullets seperately, keep an ArrayList of GameObject's and use Polymorphism. You can start with your own code or [use the solution to last weeks lab that I made](processing/classes3). You will need to add update and render methods to the GameObject along with some other stuff you can figure out for yourself.
 
 This should be pretty easy to do, so as an additional challenge, you can make a Star class. It should extend GameObject and it should rotate clockwise by itself. You should make a constructor that takes the x, y, radius, color and number of points. If you can't figure out how to draw the star using trigonometry, check out [this example from earlier in the course](processing/star). Creats some instances of the star. This is what my sketch looks like with 5 random stars on the screen
 
 ![Sketch](images/p12.png)
 
-Note! 
+Note!
 - Sometimes using polymorphism and ArrayLists can reduce code, but even so, it is sometimes necessary in a complex system to keep separate references to different types of objects. You can check out the complete [SpaceWars game in Processing on my git repository](https://github.com/skooter500/YASC).
 
-Let me see what you are working on by uploading a picture of your sketch to the slack. 
+Let me see what you are working on by uploading a picture of your sketch to the slack.
 Log onto webcourses and do today's MCQ
 
 - [Solution to the lab](processing/classes4)
@@ -1029,8 +1033,8 @@ Log onto webcourses and do today's MCQ
 - Abstract classes & interfaces class:
 
 	[![YouTube](http://img.youtube.com/vi/4yVTkG-a6zo/0.jpg)](https://www.youtube.com/watch?v=4yVTkG-a6zo)
-	
-- [The SpaceWar game with collisions, abstract classes & interfaces for powerups](processing/classes5) 	
+
+- [The SpaceWar game with collisions, abstract classes & interfaces for powerups](processing/classes5)
 
 # Week 13
 ## Lecture
@@ -1038,31 +1042,31 @@ Log onto webcourses and do today's MCQ
 - Stephen Hawkings on the Game of Life:
 
 	[![YouTube](http://img.youtube.com/vi/CgOcEZinQ2I/0.jpg)](https://www.youtube.com/watch?v=CgOcEZinQ2I)
-	
-- John Conway on the Game of Life:	
+
+- John Conway on the Game of Life:
 
 	[![YouTube](http://img.youtube.com/vi/C2vgICfQawE/0.jpg)](https://www.youtube.com/watch?v=C2vgICfQawE)
 
 - Epic Conway's Game of Life:
 
 	[![YouTube](http://img.youtube.com/vi/FdMzngWchDk/0.jpg)](https://www.youtube.com/watch?v=FdMzngWchDk)
-	
+
 - And finally, Alan Watts
 
-	[![YouTube](http://img.youtube.com/vi/wU0PYcCsL6o/0.jpg)](https://www.youtube.com/watch?v=wU0PYcCsL6o)	
-	
+	[![YouTube](http://img.youtube.com/vi/wU0PYcCsL6o/0.jpg)](https://www.youtube.com/watch?v=wU0PYcCsL6o)
+
 - [Conway's Game of Life on Wikipedia](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 - [The Game of Life Wiki](http://www.conwaylife.com/wiki/Main_Page)
-	
+
 ## Lab
 
-Pleas take 5 minutes to [give me your thoughts about how this semester went](https://docs.google.com/forms/d/15pM31sUPP2SM5igDtr-TUDsBGFTSCoBEyxCG4yNzrMY/viewform). 
+Pleas take 5 minutes to [give me your thoughts about how this semester went](https://docs.google.com/forms/d/15pM31sUPP2SM5igDtr-TUDsBGFTSCoBEyxCG4yNzrMY/viewform).
 
 Try and complete the Game of Life we started in the class yesterday. If you weren't in the class, you could take a read of the Game of Life wiki page and have a crack at implementing it from scratch yourselves. It's not too difficult. If you get your basic game of life to evolve, you could try these additions:
 
-- The method ```void mousePressed()``` gets called in your sketch whenever the mouse is pressed. The method ```mouseDragged``` gets called whenever you hold the mouse down and move it over your sketch. You can get the mouse x and y coordinates by using the built in variables ```mouseX``` and ```mouseY```. You can use these methods to implement mouse drawing. To do this you need to calculate which row and column in the 2D array the mouse is over and then set this cell to be true. 
+- The method ```void mousePressed()``` gets called in your sketch whenever the mouse is pressed. The method ```mouseDragged``` gets called whenever you hold the mouse down and move it over your sketch. You can get the mouse x and y coordinates by using the built in variables ```mouseX``` and ```mouseY```. You can use these methods to implement mouse drawing. To do this you need to calculate which row and column in the 2D array the mouse is over and then set this cell to be true.
 - When you press the c key, the board should clear. In otherwords, you should set every element in th 2D array to be false.
-- When you press the r key, you should randomly set 50% of the elements to be true. To do this, you need to iterate through the array and generate a random number between 0.0f and 1.0f. If the number is > 0.5f, you set the element to be true otherwise set it to be false.   
+- When you press the r key, you should randomly set 50% of the elements to be true. To do this, you need to iterate through the array and generate a random number between 0.0f and 1.0f. If the number is > 0.5f, you set the element to be true otherwise set it to be false.
 
 There some interesting starting patterns you can program also. You could write code so that when you press a number key it creates the starting pattern at the mouse x and y. I used the mouse x and y to be the top left of the shape.
 
@@ -1076,6 +1080,5 @@ There some interesting starting patterns you can program also. You could write c
 
 Here is a video of what my sketch looks like:
 
-[![YouTube](http://img.youtube.com/vi/72X38iT74As/0.jpg)](https://www.youtube.com/watch?v=72X38iT74As) 
- 
-	
+[![YouTube](http://img.youtube.com/vi/72X38iT74As/0.jpg)](https://www.youtube.com/watch?v=72X38iT74As)
+
