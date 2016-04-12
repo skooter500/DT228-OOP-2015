@@ -26,6 +26,8 @@ public class Main extends PApplet
 	
 	public void setup()
 	{
+		TuneFinder tuneFinder = new TuneFinder();
+		tuneFinder.loadTunes();
 		size(frameSize, 500);
 		smooth();
 		minim = new Minim(this);

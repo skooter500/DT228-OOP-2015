@@ -9,5 +9,6 @@
 	<classpathentry kind="lib" path="C:/processing-2.2.1/modes/java/libraries/minim/library/mp3spi1.9.4.jar"/>
 	<classpathentry kind="lib" path="C:/processing-2.2.1/modes/java/libraries/minim/library/tritonus_aos.jar"/>
 	<classpathentry kind="lib" path="C:/processing-2.2.1/modes/java/libraries/minim/library/tritonus_share.jar"/>
+	<classpathentry kind="lib" path="C:/Users/skoot/Downloads/sqlite-jdbc-3.8.11.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
