@@ -25,6 +25,42 @@ Resources
 
 ## Week 10
 - [Tunes sqlite database file](docs/tunes.sqlite)
+- [JDBC Tutorial](https://docs.oracle.com/javase/tutorial/jdbc/basics/processingsqlstatements.html)
+- [The SQLite JDBC Driver](https://bitbucket.org/xerial/sqlite-jdbc/downloads)
+
+# Lab
+## Learning Outcomes
+- Learn how to set up a JDBC connection to a database
+- Learn how to set up the appropriate JDBC driver
+- Learn how to run SQL statements and get results through Java
+- Learn how to paramaterise an SQL query in Java
+- Leran how to encapsulate rows from a table into Java objects
+
+In this lab, we will be building on the JDBC access code we wrote in the class in order to encapsulate the results from an SQL query into an ArrayList of java objects. Firstly clone the repo for the course and import the project AudioViz2 into Eclipse. This will give you the code we made in the class. It probably won't compile without you first setting up the java libraries (which are stored in jar files) that the program depends on. You will need:
+
+- The Processing libraries (core.jar).
+- The Minim Libraries (several files).
+- The sqlite JDBC driver, which you can [download from here](https://bitbucket.org/xerial/sqlite-jdbc/downloads).
+
+Study the code in the loadTunes method of the TuneFinder class and make sure you understand what each line does. Now make the following changes:
+
+## Part 1
+
+- Make an ArrayList of Tune types as a field in the TuneFinder class called tunes.
+- Add an appropriate toString method to the Tune class, that makes a CSV string from the fields of the class.
+- Modify the method loadTunes so that it creates a new instance of the Tune class for every row returned and adds it to the arraylist. You should first empty the arraylist by calling clear.
+    - I find it useful to make a constructor for the Tune class that takes a ResultSet object as a parameter and constructs the tune from this, rather than include the code for this in the loadTunes method
+- Write a method called printTunes that prints all the tunes in the ArrayList, so you can test your loadTunes method.
+
+## Part 2
+- Write an overloaded loadTunes method that takes one int parameter for source. It should allow you to pass in the source id as a parameter and it should filter the results to just select tunes with the matching source id. For example, passing 4 will only load tunes that have a source of 4. You should use the PreparedStatement for this, by adding a where clause to the SQL statement. Read [this article](https://docs.oracle.com/javase/tutorial/jdbc/basics/prepared.html) that explains how to do it.
+- Test this method to make sure it works!
+- Write another overloaded method that takes 1 string as a parameter. This should should allow you to do a title search, so it only selects rows where the title contains the string parameter anywhere in the title. For example, passing in "merry" will only load tunes with merry in the title.
+- Test this by calling printTunes
+
+## Advanced!
+- Write a method called save on the Tune class that saves a tune back to the database. It should use a PreparedStatement with an update sql query. Write some code to test this.
+- Include the source name as part of the Tune object. You will also have to join to the source table in your sql statement.
 
 ## Week 7
 - [Pitch detection using zero crossings and using an FFT Example program](eclipse/AudioVis2)

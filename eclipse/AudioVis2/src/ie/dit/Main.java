@@ -27,7 +27,20 @@ public class Main extends PApplet
 	public void setup()
 	{
 		TuneFinder tuneFinder = new TuneFinder();
+		System.out.println("All tunes: ");
 		tuneFinder.loadTunes();
+		tuneFinder.printTunes();
+		
+		System.out.println("Just source 4 tunes:");
+		tuneFinder.loadTunes(4);
+		tuneFinder.printTunes();
+		
+		System.out.println("Tunes with merry in the title:");
+		tuneFinder.loadTunes("merry");
+		tuneFinder.printTunes();
+		
+		
+		
 		size(frameSize, 500);
 		smooth();
 		minim = new Minim(this);
