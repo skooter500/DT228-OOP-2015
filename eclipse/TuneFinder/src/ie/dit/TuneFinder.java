@@ -11,10 +11,33 @@ public class TuneFinder
 {
 	public TuneFinder()
 	{
+		
 	}
 	
 	ArrayList<Tune> tunes = new ArrayList<Tune>();
 	
+	public String findClosest(String notes)
+	{
+		// Iterate through the tunes arraylist
+		// Calculate the EditDistance between 
+		// the notes parameter and the searchKey field of 
+		// Each Tune
+		// return title of the one thats the closest
+		
+		float min = Float.MAX_VALUE;
+		int minIndex = 0;
+		for (int i = 0 ; i < tunes.size() ; i ++)
+		{
+			Tune tune = tunes.get(i);
+			float dist = EditDistance.substringEditDistance(notes, tune.getSearchKey());
+			if (dist < min)
+			{
+				min = dist;
+				minIndex = i;
+			}
+		}
+		return tunes.get(minIndex).getTitle();
+	}
 	
 	public void loadTunes(String title)
 	{
@@ -58,7 +81,7 @@ public class TuneFinder
 		{
 			Class.forName("org.sqlite.JDBC");			
 			conn = DriverManager.getConnection("jdbc:sqlite:tunes.sqlite");
-			s = conn.prepareStatement("select * from tuneindex where x = ?");
+			s = conn.prepareStatement("select * from tuneindex where source = ?");
 			s.setInt(1, x);
 			r = s.executeQuery();
 			while(r.next())

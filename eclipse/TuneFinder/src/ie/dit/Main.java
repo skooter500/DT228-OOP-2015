@@ -28,8 +28,8 @@ public class Main extends PApplet
 	public void setup()
 	{
 		tuneFinder = new TuneFinder();
-		System.out.println("All tunes: ");
 		tuneFinder.loadTunes(2);
+		//System.out.println(tuneFinder.findClosest("GDFAAABCADCAGADCDEGFEDCAGFDFGABCADCAGADCAGEFDDDDGDFAAABCADCAGADCDEGFEDCAGFDFGABCADCAGADCAGEFDDDDGFDGFDCADCADEFDGFDCABCDDEABAGAGFGFEDCADCAGEFDDDDGFDGFDCADCADEFDGFDCABCDDEABAGAGFGFEDCADCAGEFDDDD"));
 		//tuneFinder.printTunes();
 		
 		/*System.out.println("Just source 4 tunes:");
@@ -153,6 +153,29 @@ public class Main extends PApplet
 			text("Freq by FFT: " + freqByFFT, 10, 90);
 			text("Spelling by FFT: " + fftSpell, 10, 110);
 			
+			// Only append the character if it is different!
+			if (transcription.length() > 0)
+			{
+				if (! transcription.substring(transcription.length() - 1).equals(fftSpell))
+				{
+					transcription += fftSpell;
+				}
+			}
+			else
+			{
+				transcription += fftSpell;
+			}			
+		}
+		
+		if (transcription.length() > 60)
+		{
+			closestMatch = tuneFinder.findClosest(transcription);
+			transcription = "";
+		}			
+		
+		if (keyPressed && key == ' ')
+		{
+			transcription = "";
 		}
 		
 		text("Transcription: " + transcription, 10, 140);

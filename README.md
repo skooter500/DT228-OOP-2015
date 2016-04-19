@@ -23,6 +23,9 @@ Resources
 
 # Semester
 
+## Week 11
+- [The finished tunefinder program](eclipse/TuneFinder)
+
 ## Week 10
 - [Tunes sqlite database file](docs/tunes.sqlite)
 - [JDBC Tutorial](https://docs.oracle.com/javase/tutorial/jdbc/basics/processingsqlstatements.html)
