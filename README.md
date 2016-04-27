@@ -23,6 +23,17 @@ Resources
 
 # Semester
 
+## Week 12
+- [Performance of the collections framework in Java](eclipse/PerfTest)
+- A video I made about this a few years ago. The video uses C#:
+
+[![YouTube](http://img.youtube.com/vi/KFAkRg1vB4Y/0.jpg)](https://www.youtube.com/watch?v=KFAkRg1vB4Y)
+
+# Lab
+
+Here is [a link to a git repository with a Java program I use to clone lots of git repositories](https://github.com/skooter500/WebcoursesGitClone/blob/questions/src/ie/dit/WebcoursesGitClone.java). It is what I use to download all your assignments. Read the code and see if you can figure out how it works. There are questions in the comments you should try and answer.
+
+
 ## Week 11
 - [The finished tunefinder program](eclipse/TuneFinder)
 
